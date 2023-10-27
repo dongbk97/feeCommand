@@ -1,0 +1,251 @@
+2023-10-25 16:08:49.417 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:08:49.423 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:08:49.447 [main] INFO  o.e.c.d.DatabaseConnectionPool(41) -  Hibernate Registry builder created.
+2023-10-25 16:08:49.487 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:08:49.616 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:08:49.990 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:08:50.007 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:08:50.088 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:08:50.252 [main] ERROR o.e.c.d.DatabaseConnectionPool(50) -  SessionFactory creation failed
+org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: bean.vn.vnpay.demo2.FeeTransaction.createdDate
+	at org.hibernate.cfg.annotations.SimpleValueBinder.setType(SimpleValueBinder.java:189)
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyAndValue(PropertyBinder.java:184)
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyValueAndBind(PropertyBinder.java:204)
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2261)
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:925)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:752)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:249)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:222)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:265)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:83)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:418)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:87)
+	at database.config.vn.vnpay.demo2.DataSourceConfig.<init>(DatabaseConnectionPool.java:46)
+	at database.config.vn.vnpay.demo2.DataSourceConfig.initDatabaseConnectionPool(DatabaseConnectionPool.java:70)
+	at impl.service.vn.vnpay.demo2.TransactionServiceImpl.initTransaction(TransactionServiceImpl.java:27)
+	at vn.vnpay.demo2.Main.main(Main.java:8)
+2023-10-25 16:08:50.253 [main] WARN  c.z.hikari.HikariDataSource(376) -  The shutdown() method has been deprecated, please use the close() method instead
+2023-10-25 16:08:50.253 [main] INFO  c.z.hikari.HikariDataSource(347) -  HikariPool-1 - Shutdown initiated...
+2023-10-25 16:08:50.330 [main] INFO  c.z.hikari.HikariDataSource(349) -  HikariPool-1 - Shutdown completed.
+2023-10-25 16:09:48.738 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:09:48.742 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:09:48.751 [main] INFO  o.e.c.d.DatabaseConnectionPool(41) -  Hibernate Registry builder created.
+2023-10-25 16:09:48.785 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:09:48.889 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:09:49.220 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:09:49.234 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:09:49.317 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:09:49.468 [main] ERROR o.e.c.d.DatabaseConnectionPool(50) -  SessionFactory creation failed
+org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: bean.vn.vnpay.demo2.FeeCommand.createdDate
+	at org.hibernate.cfg.annotations.SimpleValueBinder.setType(SimpleValueBinder.java:189)
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyAndValue(PropertyBinder.java:184)
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyValueAndBind(PropertyBinder.java:204)
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2261)
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:925)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:752)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:249)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:222)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:265)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:83)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:418)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:87)
+	at database.config.vn.vnpay.demo2.DataSourceConfig.<init>(DatabaseConnectionPool.java:46)
+	at database.config.vn.vnpay.demo2.DataSourceConfig.initDatabaseConnectionPool(DatabaseConnectionPool.java:70)
+	at impl.service.vn.vnpay.demo2.TransactionServiceImpl.initTransaction(TransactionServiceImpl.java:27)
+	at vn.vnpay.demo2.Main.main(Main.java:8)
+2023-10-25 16:09:49.469 [main] WARN  c.z.hikari.HikariDataSource(376) -  The shutdown() method has been deprecated, please use the close() method instead
+2023-10-25 16:09:49.469 [main] INFO  c.z.hikari.HikariDataSource(347) -  HikariPool-1 - Shutdown initiated...
+2023-10-25 16:09:49.477 [main] INFO  c.z.hikari.HikariDataSource(349) -  HikariPool-1 - Shutdown completed.
+2023-10-25 16:10:39.286 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:10:39.290 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:10:39.299 [main] INFO  o.e.c.d.DatabaseConnectionPool(41) -  Hibernate Registry builder created.
+2023-10-25 16:10:39.331 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:10:39.430 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:10:39.771 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:10:39.785 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:10:39.875 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:10:40.041 [main] ERROR o.e.c.d.DatabaseConnectionPool(50) -  SessionFactory creation failed
+org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: bean.vn.vnpay.demo2.FeeCommand.createdDate
+	at org.hibernate.cfg.annotations.SimpleValueBinder.setType(SimpleValueBinder.java:189)
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyAndValue(PropertyBinder.java:184)
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyValueAndBind(PropertyBinder.java:204)
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2261)
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:925)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:752)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:249)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:222)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:265)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:83)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:418)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:87)
+	at database.config.vn.vnpay.demo2.DataSourceConfig.<init>(DatabaseConnectionPool.java:46)
+	at database.config.vn.vnpay.demo2.DataSourceConfig.initDatabaseConnectionPool(DatabaseConnectionPool.java:70)
+	at impl.service.vn.vnpay.demo2.TransactionServiceImpl.initTransaction(TransactionServiceImpl.java:27)
+	at vn.vnpay.demo2.Main.main(Main.java:8)
+2023-10-25 16:10:40.041 [main] WARN  c.z.hikari.HikariDataSource(376) -  The shutdown() method has been deprecated, please use the close() method instead
+2023-10-25 16:10:40.042 [main] INFO  c.z.hikari.HikariDataSource(347) -  HikariPool-1 - Shutdown initiated...
+2023-10-25 16:10:40.085 [main] INFO  c.z.hikari.HikariDataSource(349) -  HikariPool-1 - Shutdown completed.
+2023-10-25 16:11:12.662 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:11:12.667 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:11:12.675 [main] INFO  o.e.c.d.DatabaseConnectionPool(41) -  Hibernate Registry builder created.
+2023-10-25 16:11:12.709 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:11:12.811 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:11:13.145 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:11:13.163 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:11:13.252 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:11:13.824 [main] WARN  o.h.e.j.spi.SqlExceptionHelper(129) -  SQL Error: 0, SQLState: 23502
+2023-10-25 16:11:13.825 [main] ERROR o.h.e.j.spi.SqlExceptionHelper(131) -  ERROR: null value in column "created_date" of relation "fee_command" violates not-null constraint
+  Detail: Failing row contains (1, 7b90c0c7-392c-41ac-8c93-fcfb00c18a72, 0, 0.00, 0, null).
+2023-10-25 16:12:12.346 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:12:12.350 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:12:12.359 [main] INFO  o.e.c.d.DatabaseConnectionPool(41) -  Hibernate Registry builder created.
+2023-10-25 16:12:12.391 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:12:12.490 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:12:12.827 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:12:12.841 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:12:12.929 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:14:33.574 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:14:33.578 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:14:33.586 [main] INFO  o.e.c.d.DatabaseConnectionPool(41) -  Hibernate Registry builder created.
+2023-10-25 16:14:33.618 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:14:33.717 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:14:34.057 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:14:34.072 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:14:34.162 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:17:53.413 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:17:53.417 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:17:53.425 [main] INFO  o.e.c.d.DatabaseConnectionPool(41) -  Hibernate Registry builder created.
+2023-10-25 16:17:53.459 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:17:53.564 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:17:53.915 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:17:53.931 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:17:54.045 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:23:37.420 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:23:37.425 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:23:37.433 [main] INFO  o.e.c.d.DatabaseConnectionPool(41) -  Hibernate Registry builder created.
+2023-10-25 16:23:37.467 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:23:37.570 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:23:37.909 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:23:37.924 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:23:38.022 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:23:38.568 [main] WARN  o.h.e.j.spi.SqlExceptionHelper(129) -  SQL Error: 0, SQLState: 23502
+2023-10-25 16:23:38.568 [main] ERROR o.h.e.j.spi.SqlExceptionHelper(131) -  ERROR: null value in column "status" of relation "fee_transaction" violates not-null constraint
+  Detail: Failing row contains (1, c43ee73e-fad9-4403-aeb7-69a2cc57f566, 8ea23434-1700-47e3-a5f8-b63e7a4debf4, 0.00, null, null, 0, null, 2023-10-25 16:23:38.49, null).
+2023-10-25 16:24:21.329 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:24:21.333 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:24:21.339 [main] INFO  o.e.c.d.DatabaseConnectionPool(41) -  Hibernate Registry builder created.
+2023-10-25 16:24:21.372 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:24:21.476 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:24:21.819 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:24:21.834 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:24:21.920 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:32:04.455 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:32:04.459 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:32:04.465 [main] ERROR o.e.c.d.DatabaseConnectionPool(76) -  SessionFactory creation failed
+java.lang.NullPointerException: null
+	at java.util.Hashtable.put(Hashtable.java:460)
+	at java.util.Hashtable.putAll(Hashtable.java:524)
+	at org.hibernate.boot.registry.StandardServiceRegistryBuilder.applySettings(StandardServiceRegistryBuilder.java:205)
+	at database.config.vn.vnpay.demo2.DataSourceConfig.<init>(DatabaseConnectionPool.java:65)
+	at database.config.vn.vnpay.demo2.DataSourceConfig.initDatabaseConnectionPool(DatabaseConnectionPool.java:43)
+	at vn.vnpay.demo2.Main.main(Main.java:8)
+2023-10-25 16:37:08.698 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:37:08.702 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:37:08.708 [main] ERROR o.e.c.d.DatabaseConnectionPool(78) -  SessionFactory creation failed
+java.lang.NullPointerException: null
+	at java.util.Hashtable.put(Hashtable.java:460)
+	at java.util.Hashtable.putAll(Hashtable.java:524)
+	at org.hibernate.boot.registry.StandardServiceRegistryBuilder.applySettings(StandardServiceRegistryBuilder.java:205)
+	at database.config.vn.vnpay.demo2.DataSourceConfig.<init>(DatabaseConnectionPool.java:67)
+	at database.config.vn.vnpay.demo2.DataSourceConfig.initDatabaseConnectionPool(DatabaseConnectionPool.java:44)
+	at vn.vnpay.demo2.Main.main(Main.java:8)
+2023-10-25 16:39:29.246 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:39:29.250 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:39:29.258 [main] INFO  o.e.c.d.DatabaseConnectionPool(73) -  Hibernate Registry builder created.
+2023-10-25 16:39:29.291 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:39:29.397 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:39:29.730 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:39:29.744 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:39:29.830 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:39:51.109 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:39:51.114 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:39:51.121 [main] INFO  o.e.c.d.DatabaseConnectionPool(73) -  Hibernate Registry builder created.
+2023-10-25 16:39:51.154 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:39:51.253 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:39:51.597 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:39:51.611 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:39:51.696 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:39:57.497 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:39:57.501 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:39:57.510 [main] INFO  o.e.c.d.DatabaseConnectionPool(73) -  Hibernate Registry builder created.
+2023-10-25 16:39:57.543 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:39:57.641 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:39:57.977 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:39:57.991 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:39:58.076 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:40:02.209 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:40:02.214 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:40:02.222 [main] INFO  o.e.c.d.DatabaseConnectionPool(73) -  Hibernate Registry builder created.
+2023-10-25 16:40:02.256 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:40:02.353 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:40:02.694 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:40:02.711 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:40:02.800 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:40:56.611 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:40:56.615 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:40:56.625 [main] INFO  o.e.c.d.DatabaseConnectionPool(73) -  Hibernate Registry builder created.
+2023-10-25 16:40:56.660 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:40:56.766 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:40:57.155 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:40:57.171 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:40:57.274 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:41:00.896 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:41:00.900 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:41:00.909 [main] INFO  o.e.c.d.DatabaseConnectionPool(73) -  Hibernate Registry builder created.
+2023-10-25 16:41:00.941 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:41:01.039 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:41:01.364 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:41:01.378 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:41:01.461 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:41:05.035 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:41:05.039 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:41:05.048 [main] INFO  o.e.c.d.DatabaseConnectionPool(73) -  Hibernate Registry builder created.
+2023-10-25 16:41:05.080 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:41:05.183 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:41:05.517 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:41:05.531 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:41:05.613 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:45:20.022 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:45:20.027 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:45:20.035 [main] INFO  o.e.c.d.DatabaseConnectionPool(71) -  Hibernate Registry builder created.
+2023-10-25 16:45:20.068 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:45:20.166 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:45:20.508 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:45:20.523 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:45:20.613 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 16:50:07.048 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 16:50:07.053 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 16:50:07.062 [main] INFO  o.e.c.d.DatabaseConnectionPool(57) -  Hibernate Registry builder created.
+2023-10-25 16:50:07.094 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 16:50:07.195 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 16:50:07.535 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 16:50:07.551 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 16:50:07.641 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 17:04:54.749 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 17:04:54.753 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 17:04:54.762 [main] INFO  o.e.c.d.DatabaseConnectionPool(57) -  Hibernate Registry builder created.
+2023-10-25 17:04:54.795 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 17:04:54.895 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 17:04:55.244 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 17:04:55.259 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 17:04:55.353 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-25 17:04:55.895 [main] WARN  o.h.e.j.spi.SqlExceptionHelper(129) -  SQL Error: 0, SQLState: 22001
+2023-10-25 17:04:55.896 [main] ERROR o.h.e.j.spi.SqlExceptionHelper(131) -  ERROR: value too long for type character varying(2)
+2023-10-25 17:05:32.554 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-25 17:05:32.556 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-25 17:05:32.566 [main] INFO  o.e.c.d.DatabaseConnectionPool(57) -  Hibernate Registry builder created.
+2023-10-25 17:05:32.596 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-25 17:05:32.697 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-25 17:05:33.031 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-25 17:05:33.047 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2023-10-25 17:05:33.136 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException

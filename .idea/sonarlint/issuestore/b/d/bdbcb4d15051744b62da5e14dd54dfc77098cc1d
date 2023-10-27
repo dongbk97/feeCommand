@@ -1,0 +1,14 @@
+
+Q
+java:S3740{"/Provide the parametrized type for this generic.(¬œ‘âşÿÿÿÿ8ÙÔ¢Ü¶1
+R
+java:S3740•"/Provide the parametrized type for this generic.(Ÿ¨¢Ìøÿÿÿÿ8ÚÔ¢Ü¶1
+R
+java:S3740¢"/Provide the parametrized type for this generic.(¬œ‘âşÿÿÿÿ8ÚÔ¢Ü¶1
+i
+java:S1192e"GDefine a constant instead of duplicating this literal "status" 3 times.(âßòøÿÿÿÿ8ÚÔ¢Ü¶1
+H
+java:S1168p"+Return an empty collection instead of null.(¥¹ï8öÔ¢Ü¶1
+^	java:S125"<This block of commented-out lines of code should be removed.(ÇŞ¥®ûÿÿÿÿ8öÔ¢Ü¶1
+a
+java:S1155¥">Use isEmpty() to check whether the collection is empty or not.(í¯Ü³úÿÿÿÿ8÷Ô¢Ü¶1

@@ -1,0 +1,7 @@
+
+¶
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(„Å›ñ8ß°ıÏ¶1
+y
+java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(•€¾Æùÿÿÿÿ8­ÔÏ¶1
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(•€¾Æùÿÿÿÿ8°ÔÏ¶1

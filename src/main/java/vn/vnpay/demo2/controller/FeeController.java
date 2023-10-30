@@ -18,7 +18,7 @@ public class FeeController {
     public void start(List<String> pathList) {
         try {
             HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
-            RequestHandler requestHandler = new  RequestHandler();
+            RequestHandler requestHandler = new RequestHandler();
             pathList.forEach(t -> server.createContext(t, requestHandler));
             server.setExecutor(new ThreadPoolExecutor(4, 8, 30, TimeUnit.SECONDS, new ArrayBlockingQueue<>(100)));
             server.start();

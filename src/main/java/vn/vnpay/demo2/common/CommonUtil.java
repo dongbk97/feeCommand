@@ -5,6 +5,9 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.exceptions.JedisConnectionException;
+import vn.vnpay.demo2.config.redis.RedisConfig;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -15,6 +18,11 @@ import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
@@ -81,5 +89,81 @@ public class CommonUtil {
         String timestamp = sdf.format(new Date());
         String uuid = UUID.randomUUID().toString().replace("-", "");
         return timestamp + "-" + uuid;
+    }
+
+    public static String generateLogIdByNanoTime(String ipClient) {
+        long nanoTime = System.nanoTime();
+        List<Character> digits = new ArrayList<>(Arrays.asList('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'));
+        Collections.shuffle(digits);
+        StringBuilder shuffledNumber = new StringBuilder();
+        for (char c : digits) {
+            shuffledNumber.append(c);
+        }
+        shuffledNumber.append(nanoTime).append(ipClient.replace(":", ""));
+        return shuffledNumber.toString();
+    }
+
+    public static boolean isExpired(String requestTime) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
+        LocalDateTime parsedTime = LocalDateTime.parse(requestTime, formatter);
+        LocalDateTime currentTime = LocalDateTime.now();
+
+        long minutesDiff = java.time.Duration.between(parsedTime, currentTime).toMinutes();
+        return Math.abs(minutesDiff) > 10;
+    }
+
+    public static boolean isExistKey(String requestId) {
+        RedisConfig redisConfig = RedisConfig.getInstance();
+        Jedis jedis = null;
+        try {
+            jedis = redisConfig.getJedisPool().getResource();
+            return jedis.exists(requestId);
+        } catch (JedisConnectionException e) {
+            logger.error(" Error connecting to Redis", e);
+            return false;
+        } catch (Exception e) {
+            logger.error("Error push message to redis", e);
+            return false;
+        } finally {
+            if (jedis != null) {
+                redisConfig.returnConnection(jedis);
+            }
+        }
+    }
+
+    public static boolean pushRedis(String requestId) {
+        RedisConfig redisConfig = RedisConfig.getInstance();
+        Jedis jedis = null;
+        try {
+            jedis = redisConfig.getJedisPool().getResource();
+            String resultPushMessage = "";
+            if (jedis != null) {
+                LocalDateTime now = LocalDateTime.now();
+                LocalDateTime endOfDay = LocalDateTime.of(now.getYear(), now.getMonth(), now.getDayOfMonth(), 23, 59, 59);
+                long timeToLife = endOfDay.toEpochSecond(ZoneOffset.UTC) - now.toEpochSecond(ZoneOffset.UTC);
+                resultPushMessage = jedis.setex(requestId, timeToLife, "");
+            }
+            boolean isPushMessageSuccessfully = "OK".equalsIgnoreCase(resultPushMessage);
+            if (isPushMessageSuccessfully) {
+                logger.info(" Push requestId : {} to Redis successfully !",
+                        requestId);
+            }
+            return isPushMessageSuccessfully;
+        } catch (JedisConnectionException e) {
+            logger.error(" Error connecting to Redis", e);
+            return false;
+        } catch (Exception e) {
+            logger.error("Error push message to redis", e);
+            return false;
+        } finally {
+            if (jedis != null) {
+                redisConfig.returnConnection(jedis);
+            }
+        }
+    }
+
+    public static String getNextId() {
+        Snowflake snowflake = SnowflakeSingleton.getInstance();
+        return Long.toString(snowflake.nextId());
     }
 }

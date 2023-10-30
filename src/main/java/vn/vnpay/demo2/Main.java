@@ -20,10 +20,10 @@ public class Main {
             TransactionServiceImpl transactionService = new TransactionServiceImpl();
             ScheduleScanTime scheduleScanTime = new ScheduleScanTime();
             scheduleScanTime.cronJob(transactionService);
-//            FeeController feeController = new FeeController();
-//            List<String> listPath = Arrays.asList("/init","/update");
-//            feeController.start(listPath);
-            transactionService.fetchAllFeeTransactions("bdf055ba-74a0-4d2e-81f7-6c20a3c0b2c9");
+            FeeController feeController = new FeeController();
+            List<String> listPath = Arrays.asList("/init", "/update");
+            feeController.start(listPath);
+//            transactionService.updateStatus("bdf055ba-74a0-4d2e-81f7-6c20a3c0b2c9");
         } catch (Exception e) {
             logger.error("Failed to initialize",e);
             System.exit(3);

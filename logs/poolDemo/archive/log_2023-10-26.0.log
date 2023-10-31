@@ -1,0 +1,1121 @@
+2023-10-26 09:39:27.967 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 09:39:27.980 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 09:39:28.337 [main] INFO  o.e.c.d.DbConnectionPool(58) -  Hibernate Registry builder created.
+2023-10-26 09:39:28.361 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 09:39:28.475 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: com.zaxxer.hikari.hibernate.HikariConnectionProvider
+2023-10-26 09:39:28.477 [main] WARN  c.z.h.h.HikariConnectionProvider(70) -  com.zaxxer.hikari.hibernate.HikariConnectionProvider has been deprecated for versions of Hibernate 4.3.6 and newer.  Please switch to org.hibernate.hikaricp.internal.HikariCPConnectionProvider.
+2023-10-26 09:39:28.507 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 09:39:28.881 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 09:39:28.896 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 09:39:28.978 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 09:39:28.982 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1c852c0f
+2023-10-26 09:39:29.185 [main] WARN  org.hibernate.orm.deprecation(868) -  HHH90000023: Encountered use of deprecated Connection handling settings [hibernate.connection.acquisition_mode]or [hibernate.connection.release_mode]; use [hibernate.connection.handling_mode] instead
+2023-10-26 09:40:49.744 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 09:40:49.748 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 09:40:50.028 [main] INFO  o.e.c.d.DbConnectionPool(58) -  Hibernate Registry builder created.
+2023-10-26 09:40:50.049 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 09:40:50.132 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 09:40:50.151 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 09:40:50.523 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 09:40:50.540 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 09:40:50.622 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 09:40:50.625 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1c852c0f
+2023-10-26 09:40:50.782 [main] WARN  org.hibernate.orm.deprecation(868) -  HHH90000023: Encountered use of deprecated Connection handling settings [hibernate.connection.acquisition_mode]or [hibernate.connection.release_mode]; use [hibernate.connection.handling_mode] instead
+2023-10-26 09:43:05.951 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 09:43:05.955 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 09:43:06.241 [main] INFO  o.e.c.d.DbConnectionPool(58) -  Hibernate Registry builder created.
+2023-10-26 09:43:06.262 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 09:43:06.346 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 09:43:06.367 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 09:43:06.708 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 09:43:06.723 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 09:43:06.799 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 09:43:06.803 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1c852c0f
+2023-10-26 09:43:06.975 [main] ERROR o.e.c.d.DbConnectionPool(67) -  SessionFactory creation failed
+java.lang.IllegalArgumentException: No enum constant org.hibernate.resource.jdbc.spi.PhysicalConnectionHandlingMode.AFTER_TRANSACTION
+	at java.lang.Enum.valueOf(Enum.java:238)
+	at org.hibernate.resource.jdbc.spi.PhysicalConnectionHandlingMode.valueOf(PhysicalConnectionHandlingMode.java:26)
+	at org.hibernate.resource.jdbc.spi.PhysicalConnectionHandlingMode.interpret(PhysicalConnectionHandlingMode.java:82)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl$SessionFactoryOptionsStateStandardImpl.interpretConnectionHandlingMode(SessionFactoryBuilderImpl.java:834)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl$SessionFactoryOptionsStateStandardImpl.<init>(SessionFactoryBuilderImpl.java:735)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.<init>(SessionFactoryBuilderImpl.java:81)
+	at org.hibernate.boot.internal.MetadataImpl.getSessionFactoryBuilder(MetadataImpl.java:135)
+	at database.config.vn.vnpay.fee.DataSourceConfig.registerSession(DbConnectionPool.java:64)
+	at database.config.vn.vnpay.fee.DataSourceConfig.initDatabaseConnectionPool(DbConnectionPool.java:46)
+	at vn.vnpay.fee.Main.main(Main.java:8)
+2023-10-26 09:43:06.976 [main] WARN  c.z.hikari.HikariDataSource(376) -  The shutdown() method has been deprecated, please use the close() method instead
+2023-10-26 09:43:06.976 [main] INFO  c.z.hikari.HikariDataSource(347) -  HikariPool-1 - Shutdown initiated...
+2023-10-26 09:43:07.022 [main] INFO  c.z.hikari.HikariDataSource(349) -  HikariPool-1 - Shutdown completed.
+2023-10-26 09:43:49.302 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 09:43:49.307 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 09:43:49.584 [main] INFO  o.e.c.d.DbConnectionPool(58) -  Hibernate Registry builder created.
+2023-10-26 09:43:49.605 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 09:43:49.687 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 09:43:49.707 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 09:43:50.045 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 09:43:50.061 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 09:43:50.143 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 09:43:50.148 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1c852c0f
+2023-10-26 09:43:50.311 [main] ERROR o.e.c.d.DbConnectionPool(67) -  SessionFactory creation failed
+java.lang.IllegalArgumentException: No enum constant org.hibernate.resource.jdbc.spi.PhysicalConnectionHandlingMode.AFTER_TRANSACTION
+	at java.lang.Enum.valueOf(Enum.java:238)
+	at org.hibernate.resource.jdbc.spi.PhysicalConnectionHandlingMode.valueOf(PhysicalConnectionHandlingMode.java:26)
+	at org.hibernate.resource.jdbc.spi.PhysicalConnectionHandlingMode.interpret(PhysicalConnectionHandlingMode.java:82)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl$SessionFactoryOptionsStateStandardImpl.interpretConnectionHandlingMode(SessionFactoryBuilderImpl.java:834)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl$SessionFactoryOptionsStateStandardImpl.<init>(SessionFactoryBuilderImpl.java:735)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.<init>(SessionFactoryBuilderImpl.java:81)
+	at org.hibernate.boot.internal.MetadataImpl.getSessionFactoryBuilder(MetadataImpl.java:135)
+	at database.config.vn.vnpay.fee.DataSourceConfig.registerSession(DbConnectionPool.java:64)
+	at database.config.vn.vnpay.fee.DataSourceConfig.initDatabaseConnectionPool(DbConnectionPool.java:46)
+	at vn.vnpay.fee.Main.main(Main.java:8)
+2023-10-26 09:43:50.312 [main] WARN  c.z.hikari.HikariDataSource(376) -  The shutdown() method has been deprecated, please use the close() method instead
+2023-10-26 09:43:50.312 [main] INFO  c.z.hikari.HikariDataSource(347) -  HikariPool-1 - Shutdown initiated...
+2023-10-26 09:43:50.349 [main] INFO  c.z.hikari.HikariDataSource(349) -  HikariPool-1 - Shutdown completed.
+2023-10-26 09:44:18.845 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 09:44:18.848 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 09:44:19.123 [main] INFO  o.e.c.d.DbConnectionPool(58) -  Hibernate Registry builder created.
+2023-10-26 09:44:19.143 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 09:44:19.223 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 09:44:19.242 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 09:44:19.582 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 09:44:19.599 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 09:44:19.685 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 09:44:19.689 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1c852c0f
+2023-10-26 09:46:47.394 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 09:46:47.399 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 09:46:47.688 [main] INFO  o.e.c.d.DbConnectionPool(58) -  Hibernate Registry builder created.
+2023-10-26 09:46:47.710 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 09:46:47.796 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 09:46:47.818 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 09:46:48.165 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 09:46:48.181 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 09:46:48.258 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 09:46:48.262 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1c852c0f
+2023-10-26 09:46:48.434 [main] WARN  org.hibernate.orm.deprecation(868) -  HHH90000023: Encountered use of deprecated Connection handling settings [hibernate.connection.acquisition_mode]or [hibernate.connection.release_mode]; use [hibernate.connection.handling_mode] instead
+2023-10-26 09:49:10.907 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 09:49:10.913 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 09:49:11.200 [main] INFO  o.e.c.d.DbConnectionPool(54) -  Hibernate Registry builder created.
+2023-10-26 09:49:11.224 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 09:49:11.312 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 09:49:11.339 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 09:49:11.705 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 09:49:11.719 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 09:49:11.795 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 09:49:11.798 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1c852c0f
+2023-10-26 09:50:44.673 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 09:50:44.677 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 09:50:44.963 [main] INFO  o.e.c.d.DbConnectionPool(52) -  Hibernate Registry builder created.
+2023-10-26 09:50:44.983 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 09:50:45.066 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 09:50:45.089 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 09:50:45.434 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 09:50:45.448 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 09:50:45.526 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 09:50:45.531 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2b72cb8a
+2023-10-26 09:54:02.648 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 09:54:02.653 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 09:54:02.955 [main] INFO  o.e.c.d.DbConnectionPool(39) -  Hibernate Registry builder created.
+2023-10-26 09:54:02.976 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 09:54:03.065 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 09:54:03.091 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 09:54:03.439 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 09:54:03.454 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 09:54:03.529 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 09:54:03.533 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2b72cb8a
+2023-10-26 10:00:46.808 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 10:00:46.813 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 10:00:47.123 [main] INFO  o.e.c.d.DbConnectionPool(53) -  Hibernate Registry builder created.
+2023-10-26 10:00:47.144 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 10:00:47.223 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 10:00:47.243 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 10:00:47.588 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 10:00:47.604 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 10:00:47.703 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 10:00:47.708 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2b72cb8a
+2023-10-26 10:03:16.165 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 10:03:16.170 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 10:03:16.449 [main] INFO  o.e.c.d.DbConnectionPool(53) -  Hibernate Registry builder created.
+2023-10-26 10:03:16.471 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 10:03:16.552 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 10:03:16.572 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 10:03:16.904 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 10:03:16.920 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 10:03:17.004 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 10:03:17.008 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2b72cb8a
+2023-10-26 10:03:17.492 [main] INFO  o.e.config.redis.RedisConfig(37) -  Create redis pool configuration with 0 connections
+2023-10-26 10:03:38.995 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 10:03:39.002 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 10:03:39.316 [main] INFO  o.e.c.d.DbConnectionPool(53) -  Hibernate Registry builder created.
+2023-10-26 10:03:39.340 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 10:03:39.428 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 10:03:39.449 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 10:03:39.809 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 10:03:39.829 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 10:03:39.914 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 10:03:39.919 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1c852c0f
+2023-10-26 10:04:06.130 [main] INFO  o.e.config.redis.RedisConfig(37) -  Create redis pool configuration with 0 connections
+2023-10-26 10:04:23.073 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 10:04:23.078 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 10:04:23.401 [main] INFO  o.e.c.d.DbConnectionPool(53) -  Hibernate Registry builder created.
+2023-10-26 10:04:23.428 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 10:04:23.525 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 10:04:23.548 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 10:04:23.926 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 10:04:23.945 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 10:04:24.035 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 10:04:24.041 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1c852c0f
+2023-10-26 10:04:24.592 [main] INFO  o.e.config.redis.RedisConfig(37) -  Create redis pool configuration with 0 connections
+2023-10-26 10:05:55.158 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 10:05:55.163 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 10:05:55.468 [main] INFO  o.e.c.d.DbConnectionPool(53) -  Hibernate Registry builder created.
+2023-10-26 10:05:55.493 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 10:05:55.588 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 10:05:55.612 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 10:05:55.986 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 10:05:56.005 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 10:05:56.092 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 10:05:56.097 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1c852c0f
+2023-10-26 10:05:56.669 [main] INFO  o.e.config.redis.RedisConfig(37) -  Create redis pool configuration with 0 connections
+2023-10-26 10:07:04.679 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 10:07:04.684 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 10:07:04.987 [main] INFO  o.e.c.d.DbConnectionPool(53) -  Hibernate Registry builder created.
+2023-10-26 10:07:05.015 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 10:07:05.110 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 10:07:05.132 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 10:07:05.530 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 10:07:05.548 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 10:07:05.632 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 10:07:05.636 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1c852c0f
+2023-10-26 10:07:06.211 [main] INFO  o.e.config.redis.RedisConfig(37) -  Create redis pool configuration with 0 connections
+2023-10-26 10:12:14.635 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 10:12:14.641 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 10:12:14.921 [main] INFO  o.e.c.d.DbConnectionPool(53) -  Hibernate Registry builder created.
+2023-10-26 10:12:14.941 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 10:12:15.025 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 10:12:15.045 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 10:12:15.375 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 10:12:15.391 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 10:12:15.465 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 10:12:15.467 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2b72cb8a
+2023-10-26 10:12:15.987 [main] INFO  o.e.config.redis.RedisConfig(54) -  Create redis pool configuration with 3 connections
+2023-10-26 10:25:24.664 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 10:25:24.668 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 10:25:24.919 [main] INFO  o.e.c.d.DbConnectionPool(51) -  Hibernate Registry builder created.
+2023-10-26 10:25:24.946 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 10:25:25.024 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 10:25:25.045 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 10:25:25.389 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 10:25:25.410 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 10:25:25.495 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 10:25:25.499 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72ef8d15
+2023-10-26 10:25:26.049 [main] INFO  o.e.config.redis.RedisConfig(50) -  Create redis pool configuration with 3 connections
+2023-10-26 11:33:16.069 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 11:33:16.076 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 11:33:16.406 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 11:33:16.439 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 11:33:16.550 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 11:33:16.580 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 11:33:16.982 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 11:33:17.006 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 11:33:17.082 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 11:33:17.085 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72ef8d15
+2023-10-26 11:33:17.668 [main] INFO  v.v.d.config.redis.RedisConfig(50) -  Create redis pool configuration with 3 connections
+2023-10-26 14:17:08.669 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 14:17:08.674 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 14:17:09.063 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 14:17:09.109 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 14:17:09.230 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 14:17:09.263 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 14:17:09.663 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 14:17:09.691 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 14:17:09.804 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 14:17:09.811 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72ef8d15
+2023-10-26 14:17:10.488 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 14:17:10.594 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 14:17:10.720 [main] WARN  o.h.e.j.spi.SqlExceptionHelper(129) -  SQL Error: 0, SQLState: 22001
+2023-10-26 14:17:10.721 [main] ERROR o.h.e.j.spi.SqlExceptionHelper(131) -  ERROR: value too long for type character varying(10)
+2023-10-26 14:17:10.724 [main] INFO  o.h.e.j.b.i.AbstractBatchImpl(193) -  HHH000010: On release of batch it still contained JDBC statements
+2023-10-26 14:17:10.725 [main] ERROR o.h.i.ExceptionMapperStandardImpl(39) -  HHH000346: Error during managed flush [org.hibernate.exception.DataException: could not execute statement]
+2023-10-26 14:17:10.734 [main] ERROR v.v.d.s.i.TransactionServiceImpl(70) -  Occur error while update fee transaction 
+javax.persistence.PersistenceException: org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:147)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:155)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:162)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1441)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:491)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3201)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2411)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:146)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:220)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:68)
+	at vn.vnpay.fee.service.impl.TransactionServiceImpl.updateStatus(TransactionServiceImpl.java:67)
+	at vn.vnpay.fee.Main.main(Main.java:17)
+Caused by: org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:118)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:208)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:3188)
+	at org.hibernate.persister.entity.AbstractEntityPersister.updateOrInsert(AbstractEntityPersister.java:3067)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:3447)
+	at org.hibernate.action.internal.EntityUpdateAction.execute(EntityUpdateAction.java:145)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:589)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:463)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:337)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1435)
+	... 10 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(10)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:149)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:124)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:205)
+	... 20 common frames omitted
+2023-10-26 14:17:32.364 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 14:17:32.369 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 14:17:32.699 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 14:17:32.734 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 14:17:32.831 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 14:17:32.854 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 14:17:33.267 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 14:17:33.300 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 14:17:33.405 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 14:17:33.410 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72ef8d15
+2023-10-26 14:17:33.988 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 14:17:34.102 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 14:17:34.215 [main] WARN  o.h.e.j.spi.SqlExceptionHelper(129) -  SQL Error: 0, SQLState: 22001
+2023-10-26 14:17:34.215 [main] ERROR o.h.e.j.spi.SqlExceptionHelper(131) -  ERROR: value too long for type character varying(10)
+2023-10-26 14:17:34.217 [main] INFO  o.h.e.j.b.i.AbstractBatchImpl(193) -  HHH000010: On release of batch it still contained JDBC statements
+2023-10-26 14:17:34.219 [main] ERROR o.h.i.ExceptionMapperStandardImpl(39) -  HHH000346: Error during managed flush [org.hibernate.exception.DataException: could not execute statement]
+2023-10-26 14:17:34.222 [main] ERROR v.v.d.s.i.TransactionServiceImpl(70) -  Occur error while update fee transaction 
+javax.persistence.PersistenceException: org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:147)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:155)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:162)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1441)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:491)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3201)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2411)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:146)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:220)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:68)
+	at vn.vnpay.fee.service.impl.TransactionServiceImpl.updateStatus(TransactionServiceImpl.java:67)
+	at vn.vnpay.fee.Main.main(Main.java:17)
+Caused by: org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:118)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:208)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:3188)
+	at org.hibernate.persister.entity.AbstractEntityPersister.updateOrInsert(AbstractEntityPersister.java:3067)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:3447)
+	at org.hibernate.action.internal.EntityUpdateAction.execute(EntityUpdateAction.java:145)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:589)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:463)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:337)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1435)
+	... 10 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(10)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:149)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:124)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:205)
+	... 20 common frames omitted
+2023-10-26 14:18:36.285 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 14:18:36.285 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 14:18:36.631 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 14:18:36.663 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 14:18:36.756 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 14:18:36.788 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 14:18:37.212 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 14:18:37.243 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 14:18:37.377 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 14:18:37.385 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72ef8d15
+2023-10-26 14:18:38.048 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 14:18:38.156 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 14:19:21.869 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 14:19:21.874 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 14:19:22.197 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 14:19:22.234 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 14:19:22.350 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 14:19:22.378 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 14:19:22.832 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 14:19:22.865 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 14:19:22.980 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 14:19:22.985 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72ef8d15
+2023-10-26 14:19:23.604 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 14:19:23.709 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 14:20:45.993 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 14:20:46.000 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 14:20:46.370 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 14:20:46.408 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 14:20:46.541 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 14:20:46.572 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 14:20:47.052 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 14:20:47.072 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 14:20:47.186 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 14:20:47.193 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7d94beb9
+2023-10-26 14:20:47.958 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 14:20:48.086 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 14:21:10.552 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 14:21:10.557 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 14:21:10.844 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 14:21:10.888 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 14:21:10.989 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 14:21:11.013 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 14:21:11.425 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 14:21:11.451 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 14:21:11.555 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 14:21:11.560 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72ef8d15
+2023-10-26 14:21:12.218 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 14:21:12.319 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 14:23:13.082 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 14:23:13.087 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 14:23:13.412 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 14:23:13.453 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 14:23:13.549 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 14:23:13.572 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 14:23:14.033 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 14:23:14.056 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 14:23:14.176 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 14:23:14.185 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72ef8d15
+2023-10-26 14:23:14.783 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 14:23:14.885 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 14:31:41.711 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 14:31:41.716 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 14:31:42.028 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 14:31:42.068 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 14:31:42.175 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 14:31:42.198 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 14:31:42.623 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 14:31:42.658 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 14:31:42.817 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 14:31:42.824 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72ef8d15
+2023-10-26 14:31:43.556 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 14:32:40.081 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 14:32:40.087 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 14:32:40.388 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 14:32:40.422 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 14:32:40.525 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 14:32:40.548 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 14:32:40.996 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 14:32:41.025 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 14:32:41.124 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 14:32:41.130 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72ef8d15
+2023-10-26 14:32:41.738 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 14:32:41.833 [main] ERROR vn.vnpay.fee.Main(27) -  Failed to initialize
+java.lang.IllegalStateException: org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl@2ba45490 is closed
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.errorIfClosed(AbstractLogicalConnectionImplementor.java:37)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:144)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getConnectionForTransactionManagement(LogicalConnectionManagedImpl.java:263)
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:116)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.rollback(JdbcResourceLocalTransactionCoordinatorImpl.java:239)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.rollback(TransactionImpl.java:100)
+	at vn.vnpay.fee.service.impl.TransactionServiceImpl.initTransaction(TransactionServiceImpl.java:50)
+	at vn.vnpay.fee.Main.main(Main.java:21)
+2023-10-26 14:33:47.738 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 14:33:47.743 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 14:33:48.050 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 14:33:48.087 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 14:33:48.190 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 14:33:48.214 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 14:33:48.675 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 14:33:48.700 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 14:33:48.804 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 14:33:48.809 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72ef8d15
+2023-10-26 14:33:49.449 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 14:33:49.540 [main] ERROR v.v.d.s.i.TransactionServiceImpl(49) -  Occur error while initializing transaction
+org.hibernate.MappingException: Unknown entity: java.util.ArrayList
+	at org.hibernate.metamodel.internal.MetamodelImpl.entityPersister(MetamodelImpl.java:620)
+	at org.hibernate.internal.SessionImpl.getEntityPersister(SessionImpl.java:1634)
+	at org.hibernate.engine.internal.ForeignKeys.isTransient(ForeignKeys.java:225)
+	at org.hibernate.event.internal.AbstractSaveEventListener.getEntityState(AbstractSaveEventListener.java:499)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.performSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:83)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:73)
+	at org.hibernate.internal.SessionImpl.fireSaveOrUpdate(SessionImpl.java:658)
+	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:650)
+	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:645)
+	at vn.vnpay.fee.service.impl.TransactionServiceImpl.initTransaction(TransactionServiceImpl.java:45)
+	at vn.vnpay.fee.Main.main(Main.java:21)
+2023-10-26 14:33:49.541 [main] ERROR vn.vnpay.fee.Main(27) -  Failed to initialize
+java.lang.IllegalStateException: org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl@74cf8b28 is closed
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.errorIfClosed(AbstractLogicalConnectionImplementor.java:37)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:144)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getConnectionForTransactionManagement(LogicalConnectionManagedImpl.java:263)
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:116)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.rollback(JdbcResourceLocalTransactionCoordinatorImpl.java:239)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.rollback(TransactionImpl.java:100)
+	at vn.vnpay.fee.service.impl.TransactionServiceImpl.initTransaction(TransactionServiceImpl.java:51)
+	at vn.vnpay.fee.Main.main(Main.java:21)
+2023-10-26 14:34:11.503 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 14:34:11.512 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 14:34:11.912 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 14:34:11.953 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 14:34:12.084 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 14:34:12.116 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 14:34:12.641 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 14:34:12.666 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 14:34:12.822 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 14:34:12.832 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7d94beb9
+2023-10-26 14:34:13.674 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 14:35:00.560 [HikariPool-1 housekeeper] WARN  c.z.hikari.pool.HikariPool(687) -  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s816ms889µs400ns).
+2023-10-26 14:35:00.575 [main] ERROR v.v.d.s.i.TransactionServiceImpl(49) -  Occur error while initializing transaction
+org.hibernate.MappingException: Unknown entity: java.util.ArrayList
+	at org.hibernate.metamodel.internal.MetamodelImpl.entityPersister(MetamodelImpl.java:620)
+	at org.hibernate.internal.SessionImpl.getEntityPersister(SessionImpl.java:1634)
+	at org.hibernate.engine.internal.ForeignKeys.isTransient(ForeignKeys.java:225)
+	at org.hibernate.event.internal.AbstractSaveEventListener.getEntityState(AbstractSaveEventListener.java:499)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.performSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:83)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:73)
+	at org.hibernate.internal.SessionImpl.fireSaveOrUpdate(SessionImpl.java:658)
+	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:650)
+	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:645)
+	at vn.vnpay.fee.service.impl.TransactionServiceImpl.initTransaction(TransactionServiceImpl.java:45)
+	at vn.vnpay.fee.Main.main(Main.java:21)
+2023-10-26 14:35:00.576 [main] ERROR vn.vnpay.fee.Main(27) -  Failed to initialize
+java.lang.IllegalStateException: org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl@181d7f28 is closed
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.errorIfClosed(AbstractLogicalConnectionImplementor.java:37)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:144)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getConnectionForTransactionManagement(LogicalConnectionManagedImpl.java:263)
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:116)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.rollback(JdbcResourceLocalTransactionCoordinatorImpl.java:239)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.rollback(TransactionImpl.java:100)
+	at vn.vnpay.fee.service.impl.TransactionServiceImpl.initTransaction(TransactionServiceImpl.java:51)
+	at vn.vnpay.fee.Main.main(Main.java:21)
+2023-10-26 14:41:28.466 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 14:41:28.472 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 14:41:28.811 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 14:41:28.847 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 14:41:28.955 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 14:41:28.983 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 14:41:29.468 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 14:41:29.499 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 14:41:29.599 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 14:41:29.605 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72ef8d15
+2023-10-26 14:41:30.242 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 14:41:30.363 [main] WARN  c.z.hikari.HikariDataSource(376) -  The shutdown() method has been deprecated, please use the close() method instead
+2023-10-26 14:41:30.364 [main] INFO  c.z.hikari.HikariDataSource(347) -  HikariPool-1 - Shutdown initiated...
+2023-10-26 14:41:30.367 [main] INFO  c.z.hikari.HikariDataSource(349) -  HikariPool-1 - Shutdown completed.
+2023-10-26 14:41:30.372 [main] ERROR v.v.d.s.i.TransactionServiceImpl(81) -  Occur error while update fee transaction 
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:490)
+	at org.hibernate.internal.SessionFactoryImpl.getCache(SessionFactoryImpl.java:761)
+	at org.hibernate.internal.AbstractSharedSessionContract.<init>(AbstractSharedSessionContract.java:141)
+	at org.hibernate.internal.AbstractSessionImpl.<init>(AbstractSessionImpl.java:29)
+	at org.hibernate.internal.SessionImpl.<init>(SessionImpl.java:250)
+	at org.hibernate.internal.SessionFactoryImpl$SessionBuilderImpl.openSession(SessionFactoryImpl.java:1209)
+	at org.hibernate.internal.SessionFactoryImpl.openSession(SessionFactoryImpl.java:441)
+	at vn.vnpay.fee.service.impl.TransactionServiceImpl.updateStatus(TransactionServiceImpl.java:65)
+	at vn.vnpay.fee.Main.main(Main.java:23)
+2023-10-26 14:41:30.377 [pool-1-thread-1] ERROR v.v.d.s.i.TransactionServiceImpl(112) -  Occur error while update fee transaction 
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:490)
+	at org.hibernate.internal.SessionFactoryImpl.getCache(SessionFactoryImpl.java:761)
+	at org.hibernate.internal.AbstractSharedSessionContract.<init>(AbstractSharedSessionContract.java:141)
+	at org.hibernate.internal.AbstractSessionImpl.<init>(AbstractSessionImpl.java:29)
+	at org.hibernate.internal.SessionImpl.<init>(SessionImpl.java:250)
+	at org.hibernate.internal.SessionFactoryImpl$SessionBuilderImpl.openSession(SessionFactoryImpl.java:1209)
+	at org.hibernate.internal.SessionFactoryImpl.openSession(SessionFactoryImpl.java:441)
+	at vn.vnpay.fee.service.impl.TransactionServiceImpl.scanFee(TransactionServiceImpl.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2023-10-26 14:41:33.383 [pool-1-thread-1] ERROR v.v.d.s.i.TransactionServiceImpl(112) -  Occur error while update fee transaction 
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:490)
+	at org.hibernate.internal.SessionFactoryImpl.getCache(SessionFactoryImpl.java:761)
+	at org.hibernate.internal.AbstractSharedSessionContract.<init>(AbstractSharedSessionContract.java:141)
+	at org.hibernate.internal.AbstractSessionImpl.<init>(AbstractSessionImpl.java:29)
+	at org.hibernate.internal.SessionImpl.<init>(SessionImpl.java:250)
+	at org.hibernate.internal.SessionFactoryImpl$SessionBuilderImpl.openSession(SessionFactoryImpl.java:1209)
+	at org.hibernate.internal.SessionFactoryImpl.openSession(SessionFactoryImpl.java:441)
+	at vn.vnpay.fee.service.impl.TransactionServiceImpl.scanFee(TransactionServiceImpl.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2023-10-26 14:41:36.375 [pool-1-thread-1] ERROR v.v.d.s.i.TransactionServiceImpl(112) -  Occur error while update fee transaction 
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:490)
+	at org.hibernate.internal.SessionFactoryImpl.getCache(SessionFactoryImpl.java:761)
+	at org.hibernate.internal.AbstractSharedSessionContract.<init>(AbstractSharedSessionContract.java:141)
+	at org.hibernate.internal.AbstractSessionImpl.<init>(AbstractSessionImpl.java:29)
+	at org.hibernate.internal.SessionImpl.<init>(SessionImpl.java:250)
+	at org.hibernate.internal.SessionFactoryImpl$SessionBuilderImpl.openSession(SessionFactoryImpl.java:1209)
+	at org.hibernate.internal.SessionFactoryImpl.openSession(SessionFactoryImpl.java:441)
+	at vn.vnpay.fee.service.impl.TransactionServiceImpl.scanFee(TransactionServiceImpl.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2023-10-26 14:41:39.383 [pool-1-thread-1] ERROR v.v.d.s.i.TransactionServiceImpl(112) -  Occur error while update fee transaction 
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:490)
+	at org.hibernate.internal.SessionFactoryImpl.getCache(SessionFactoryImpl.java:761)
+	at org.hibernate.internal.AbstractSharedSessionContract.<init>(AbstractSharedSessionContract.java:141)
+	at org.hibernate.internal.AbstractSessionImpl.<init>(AbstractSessionImpl.java:29)
+	at org.hibernate.internal.SessionImpl.<init>(SessionImpl.java:250)
+	at org.hibernate.internal.SessionFactoryImpl$SessionBuilderImpl.openSession(SessionFactoryImpl.java:1209)
+	at org.hibernate.internal.SessionFactoryImpl.openSession(SessionFactoryImpl.java:441)
+	at vn.vnpay.fee.service.impl.TransactionServiceImpl.scanFee(TransactionServiceImpl.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2023-10-26 14:44:31.992 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 14:44:31.996 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 14:44:32.249 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 14:44:32.277 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 14:44:32.355 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 14:44:32.376 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 14:44:32.712 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 14:44:32.732 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 14:44:32.812 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 14:44:32.816 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72ef8d15
+2023-10-26 14:44:33.340 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 14:44:33.464 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 14:45:13.882 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 14:45:13.887 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 14:45:14.137 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 14:45:14.166 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 14:45:14.247 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 14:45:14.265 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 14:45:14.602 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 14:45:14.624 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 14:45:14.707 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 14:45:14.712 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72ef8d15
+2023-10-26 14:45:15.205 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 14:45:15.327 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 15:00:57.152 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 15:00:57.158 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 15:00:57.406 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 15:00:57.434 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 15:00:57.513 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 15:00:57.536 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 15:00:57.881 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 15:00:57.902 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 15:00:57.982 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 15:00:57.986 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72ef8d15
+2023-10-26 15:00:58.482 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 15:00:58.585 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 15:39:13.369 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 15:39:13.373 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 15:39:13.646 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 15:39:13.677 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 15:39:13.769 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 15:39:13.791 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 15:39:14.156 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 15:39:14.179 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 15:39:14.258 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 15:39:14.263 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@239105a8
+2023-10-26 15:39:14.834 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 15:39:14.945 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 15:41:39.651 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 15:41:39.655 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 15:41:39.939 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 15:41:39.968 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 15:41:40.082 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 15:41:40.104 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 15:41:40.451 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 15:41:40.483 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 15:41:40.574 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 15:41:40.580 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@239105a8
+2023-10-26 15:41:41.166 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 15:41:41.189 [main] ERROR v.v.d.controller.FeeController(28) -  Server is started failed 
+java.lang.NullPointerException: null handler, or path parameter
+	at sun.net.httpserver.ServerImpl.createContext(ServerImpl.java:256)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:74)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:39)
+	at vn.vnpay.fee.controller.FeeController.lambda$start$0(FeeController.java:23)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at vn.vnpay.fee.controller.FeeController.start(FeeController.java:23)
+	at vn.vnpay.fee.Main.main(Main.java:26)
+2023-10-26 15:41:41.238 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 15:42:30.501 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 15:42:30.507 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 15:42:30.800 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 15:42:30.833 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 15:42:30.938 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 15:42:30.961 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 15:42:31.345 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 15:42:31.362 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 15:42:31.457 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 15:42:31.463 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6f1c29b7
+2023-10-26 15:42:32.105 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 15:43:17.246 [HikariPool-1 housekeeper] WARN  c.z.hikari.pool.HikariPool(687) -  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s798ms522µs100ns).
+2023-10-26 15:43:17.249 [main] ERROR v.v.d.controller.FeeController(28) -  Server is started failed 
+java.lang.NullPointerException: null handler, or path parameter
+	at sun.net.httpserver.ServerImpl.createContext(ServerImpl.java:256)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:74)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:39)
+	at vn.vnpay.fee.controller.FeeController.lambda$start$0(FeeController.java:23)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at vn.vnpay.fee.controller.FeeController.start(FeeController.java:23)
+	at vn.vnpay.fee.Main.main(Main.java:25)
+2023-10-26 15:43:17.310 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 15:43:19.039 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 15:43:19.045 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 15:43:19.342 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 15:43:19.377 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 15:43:19.480 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 15:43:19.502 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 15:43:19.929 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 15:43:19.947 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 15:43:20.040 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 15:43:20.048 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6f1c29b7
+2023-10-26 15:43:20.689 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 15:43:36.610 [main] ERROR v.v.d.controller.FeeController(28) -  Server is started failed 
+java.lang.NullPointerException: null handler, or path parameter
+	at sun.net.httpserver.ServerImpl.createContext(ServerImpl.java:256)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:74)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:39)
+	at vn.vnpay.fee.controller.FeeController.lambda$start$0(FeeController.java:23)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at vn.vnpay.fee.controller.FeeController.start(FeeController.java:23)
+	at vn.vnpay.fee.Main.main(Main.java:25)
+2023-10-26 15:43:36.681 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 15:44:08.774 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 15:44:08.778 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 15:44:09.052 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 15:44:09.081 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 15:44:09.170 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 15:44:09.194 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 15:44:09.548 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 15:44:09.570 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 15:44:09.649 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 15:44:09.654 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@239105a8
+2023-10-26 15:44:10.213 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 15:44:10.240 [main] ERROR v.v.d.controller.FeeController(26) -  Server is started failed 
+java.lang.IllegalArgumentException: Illegal value for path or protocol
+	at sun.net.httpserver.HttpContextImpl.<init>(HttpContextImpl.java:60)
+	at sun.net.httpserver.ServerImpl.createContext(ServerImpl.java:258)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:74)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:39)
+	at vn.vnpay.fee.controller.FeeController.lambda$start$0(FeeController.java:21)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at vn.vnpay.fee.controller.FeeController.start(FeeController.java:21)
+	at vn.vnpay.fee.Main.main(Main.java:25)
+2023-10-26 15:44:10.287 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 15:44:47.444 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 15:44:47.449 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 15:44:47.715 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 15:44:47.744 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 15:44:47.829 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 15:44:47.858 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 15:44:48.205 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 15:44:48.226 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 15:44:48.305 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 15:44:48.309 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@239105a8
+2023-10-26 15:44:48.838 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 15:44:48.861 [main] ERROR v.v.d.controller.FeeController(26) -  Server is started failed 
+java.lang.IllegalArgumentException: Illegal value for path or protocol
+	at sun.net.httpserver.HttpContextImpl.<init>(HttpContextImpl.java:60)
+	at sun.net.httpserver.ServerImpl.createContext(ServerImpl.java:258)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:74)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:39)
+	at vn.vnpay.fee.controller.FeeController.lambda$start$0(FeeController.java:21)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at vn.vnpay.fee.controller.FeeController.start(FeeController.java:21)
+	at vn.vnpay.fee.Main.main(Main.java:25)
+2023-10-26 15:44:48.913 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 15:45:18.354 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 15:45:18.359 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 15:45:18.648 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 15:45:18.681 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 15:45:18.777 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 15:45:18.798 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 15:45:19.194 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 15:45:19.211 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 15:45:19.297 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 15:45:19.301 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6f1c29b7
+2023-10-26 15:45:19.892 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 15:45:19.913 [main] ERROR v.v.d.controller.FeeController(26) -  Server is started failed 
+java.lang.IllegalArgumentException: Illegal value for path or protocol
+	at sun.net.httpserver.HttpContextImpl.<init>(HttpContextImpl.java:60)
+	at sun.net.httpserver.ServerImpl.createContext(ServerImpl.java:258)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:74)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:39)
+	at vn.vnpay.fee.controller.FeeController.lambda$start$0(FeeController.java:21)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at vn.vnpay.fee.controller.FeeController.start(FeeController.java:21)
+	at vn.vnpay.fee.Main.main(Main.java:25)
+2023-10-26 15:45:19.967 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 15:46:13.418 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 15:46:13.422 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 15:46:13.681 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 15:46:13.708 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 15:46:13.792 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 15:46:13.812 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 15:46:14.151 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 15:46:14.170 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 15:46:14.243 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 15:46:14.250 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@239105a8
+2023-10-26 15:46:14.745 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 15:46:14.770 [main] ERROR v.v.d.controller.FeeController(27) -  Server is started failed 
+java.lang.IllegalArgumentException: Illegal value for path or protocol
+	at sun.net.httpserver.HttpContextImpl.<init>(HttpContextImpl.java:60)
+	at sun.net.httpserver.ServerImpl.createContext(ServerImpl.java:258)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:74)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:39)
+	at vn.vnpay.fee.controller.FeeController.lambda$start$0(FeeController.java:22)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at vn.vnpay.fee.controller.FeeController.start(FeeController.java:22)
+	at vn.vnpay.fee.Main.main(Main.java:25)
+2023-10-26 15:46:14.816 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 15:46:17.313 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 15:46:17.319 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 15:46:17.588 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 15:46:17.619 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 15:46:17.714 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 15:46:17.735 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 15:46:18.113 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 15:46:18.130 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 15:46:18.218 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 15:46:18.225 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6f1c29b7
+2023-10-26 15:46:18.820 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 15:46:18.842 [main] ERROR v.v.d.controller.FeeController(27) -  Server is started failed 
+java.lang.IllegalArgumentException: Illegal value for path or protocol
+	at sun.net.httpserver.HttpContextImpl.<init>(HttpContextImpl.java:60)
+	at sun.net.httpserver.ServerImpl.createContext(ServerImpl.java:258)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:74)
+	at sun.net.httpserver.HttpServerImpl.createContext(HttpServerImpl.java:39)
+	at vn.vnpay.fee.controller.FeeController.lambda$start$0(FeeController.java:22)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at vn.vnpay.fee.controller.FeeController.start(FeeController.java:22)
+	at vn.vnpay.fee.Main.main(Main.java:25)
+2023-10-26 15:46:18.897 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 15:48:43.252 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 15:48:43.257 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 15:48:43.533 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 15:48:43.565 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 15:48:43.661 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 15:48:43.682 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 15:48:44.038 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 15:48:44.055 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 15:48:44.135 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 15:48:44.139 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6f1c29b7
+2023-10-26 15:48:44.724 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 15:48:44.749 [main] INFO  v.v.d.controller.FeeController(25) -  Server is running on port 8080
+2023-10-26 15:48:44.803 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 15:48:58.543 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(32) -  [20231026154858543-4fdea398633e403b882f7cd4f1eb8244] - Received POST request with endpoint: /init
+2023-10-26 15:48:58.544 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(59) -  [20231026154858543-4fdea398633e403b882f7cd4f1eb8244] - Start handle request POST in RequestHandler
+2023-10-26 15:49:08.773 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(87) -  [20231026154858543-4fdea398633e403b882f7cd4f1eb8244] - Handle request with clientIp 0:0:0:0:0:0:0:1 
+2023-10-26 15:49:20.829 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(74) -  [20231026154858543-4fdea398633e403b882f7cd4f1eb8244] - Process request in RequestHandler take 22285 millisecond 
+2023-10-26 15:49:38.763 [pool-2-thread-4] INFO  v.v.d.handle.RequestHandler(32) -  [20231026154938763-26e4316cffdf444a81fa540e6a3e8381] - Received POST request with endpoint: /init
+2023-10-26 15:49:38.765 [pool-2-thread-4] INFO  v.v.d.handle.RequestHandler(59) -  [20231026154938763-26e4316cffdf444a81fa540e6a3e8381] - Start handle request POST in RequestHandler
+2023-10-26 15:49:38.765 [pool-2-thread-4] INFO  v.v.d.handle.RequestHandler(87) -  [20231026154938763-26e4316cffdf444a81fa540e6a3e8381] - Handle request with clientIp 0:0:0:0:0:0:0:1 
+2023-10-26 15:49:38.766 [pool-2-thread-4] INFO  v.v.d.handle.RequestHandler(74) -  [20231026154938763-26e4316cffdf444a81fa540e6a3e8381] - Process request in RequestHandler take 1 millisecond 
+2023-10-26 15:49:42.712 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 15:49:42.717 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 15:49:42.997 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 15:49:43.030 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 15:49:43.126 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 15:49:43.148 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 15:49:43.543 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 15:49:43.561 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 15:49:43.657 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 15:49:43.663 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6f1c29b7
+2023-10-26 15:49:44.287 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 15:49:44.316 [main] INFO  v.v.d.controller.FeeController(25) -  Server is running on port 8080
+2023-10-26 15:49:44.375 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 15:49:55.209 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(32) -  [20231026154955209-0aa12b1007234691b60460d8ae418587] - Received POST request with endpoint: /init
+2023-10-26 15:49:55.211 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(59) -  [20231026154955209-0aa12b1007234691b60460d8ae418587] - Start handle request POST in RequestHandler
+2023-10-26 15:49:57.270 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(87) -  [20231026154955209-0aa12b1007234691b60460d8ae418587] - Handle request with clientIp 0:0:0:0:0:0:0:1 
+2023-10-26 15:50:08.604 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(74) -  [20231026154955209-0aa12b1007234691b60460d8ae418587] - Process request in RequestHandler take 13393 millisecond 
+2023-10-26 16:02:23.241 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 16:02:23.245 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 16:02:23.534 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 16:02:23.567 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 16:02:23.667 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 16:02:23.690 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 16:02:24.076 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 16:02:24.098 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 16:02:24.181 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 16:02:24.186 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@239105a8
+2023-10-26 16:02:24.711 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 16:02:24.736 [main] INFO  v.v.d.controller.FeeController(25) -  Server is running on port 8080
+2023-10-26 16:02:24.777 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 16:02:50.539 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(32) -  [20231026160250539-d7890135c71c4bc3b1e5fa97cf652894] - Received POST request with endpoint: /init
+2023-10-26 16:02:50.541 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(59) -  [20231026160250539-d7890135c71c4bc3b1e5fa97cf652894] - Start handle request POST in RequestHandler
+2023-10-26 16:02:50.541 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(89) -  [20231026160250539-d7890135c71c4bc3b1e5fa97cf652894] - Handle request with clientIp 0:0:0:0:0:0:0:1 
+2023-10-26 16:02:50.770 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(101) -  [20231026160250539-d7890135c71c4bc3b1e5fa97cf652894] - Handle request with requestBody: {"requestId":" hjawfhwqsnmkfu123894y289","requestTime":"20230623155051","commandCode":"FC230623523226","totalRecord":20,"totalFee":1000.0,"createdUser":"admin","createdDate":"20230623155051"} 
+2023-10-26 16:02:50.873 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(76) -  [20231026160250539-d7890135c71c4bc3b1e5fa97cf652894] - Process request in RequestHandler take 332 millisecond 
+2023-10-26 16:06:40.667 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 16:06:40.672 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 16:06:40.937 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 16:06:40.965 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 16:06:41.050 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 16:06:41.073 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 16:06:41.428 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 16:06:41.450 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 16:06:41.532 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 16:06:41.537 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@239105a8
+2023-10-26 16:06:42.083 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 16:06:42.110 [main] INFO  v.v.d.controller.FeeController(25) -  Server is running on port 8080
+2023-10-26 16:06:42.156 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 16:06:47.199 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(32) -  [20231026160647199-ba4d2b3de7114590bf8ee4cf4b04cd6c] - Received POST request with endpoint: /init
+2023-10-26 16:06:47.201 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(59) -  [20231026160647199-ba4d2b3de7114590bf8ee4cf4b04cd6c] - Start handle request POST in RequestHandler
+2023-10-26 16:06:47.201 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(88) -  [20231026160647199-ba4d2b3de7114590bf8ee4cf4b04cd6c] - Handle request with clientIp 0:0:0:0:0:0:0:1 
+2023-10-26 16:06:47.297 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(100) -  [20231026160647199-ba4d2b3de7114590bf8ee4cf4b04cd6c] - Handle request with requestBody: {"requestId":" hjawfhwqsnmkfu123894y289","requestTime":"20230623155051","commandCode":"FC230623523226","totalRecord":20,"totalFee":1000.0,"createdUser":"admin","createdDate":"20230623155051"} 
+2023-10-26 16:06:47.342 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(75) -  [20231026160647199-ba4d2b3de7114590bf8ee4cf4b04cd6c] - Process request in RequestHandler take 141 millisecond 
+2023-10-26 16:07:48.976 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 16:07:48.980 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 16:07:49.230 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 16:07:49.257 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 16:07:49.334 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 16:07:49.354 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 16:07:49.686 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 16:07:49.707 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 16:07:49.780 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 16:07:49.783 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@239105a8
+2023-10-26 16:07:50.285 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 16:07:50.307 [main] INFO  v.v.d.controller.FeeController(25) -  Server is running on port 8080
+2023-10-26 16:07:50.356 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 16:07:53.085 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(32) -  [20231026160753085-9210c8d64817496388fdc7dfaab7bf81] - Received POST request with endpoint: /init
+2023-10-26 16:07:53.087 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(59) -  [20231026160753085-9210c8d64817496388fdc7dfaab7bf81] - Start handle request POST in RequestHandler
+2023-10-26 16:07:53.087 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(88) -  [20231026160753085-9210c8d64817496388fdc7dfaab7bf81] - Handle request with clientIp 0:0:0:0:0:0:0:1 
+2023-10-26 16:07:53.184 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(100) -  [20231026160753085-9210c8d64817496388fdc7dfaab7bf81] - Handle request with requestBody: {"requestId":" hjawfhwqsnmkfu123894y289","requestTime":"20230623155051","commandCode":"FC230623523226","totalRecord":20,"totalFee":1000.0,"createdUser":"admin","createdDate":"20230623155051"} 
+2023-10-26 16:07:53.228 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(75) -  [20231026160753085-9210c8d64817496388fdc7dfaab7bf81] - Process request in RequestHandler take 141 millisecond 
+2023-10-26 16:09:52.644 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 16:09:52.648 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 16:09:52.899 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 16:09:52.925 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 16:09:53.003 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 16:09:53.022 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 16:09:53.358 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 16:09:53.379 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 16:09:53.457 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 16:09:53.464 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@239105a8
+2023-10-26 16:09:53.990 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 16:09:54.012 [main] INFO  v.v.d.controller.FeeController(25) -  Server is running on port 8080
+2023-10-26 16:09:54.063 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 16:09:57.718 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(32) -  [20231026160957717-fa48a43816b64f70a7cffbe2973d4cf1] - Received POST request with endpoint: /init
+2023-10-26 16:09:57.719 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(59) -  [20231026160957717-fa48a43816b64f70a7cffbe2973d4cf1] - Start handle request POST in RequestHandler
+2023-10-26 16:09:57.719 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(89) -  [20231026160957717-fa48a43816b64f70a7cffbe2973d4cf1] - Handle request with clientIp 0:0:0:0:0:0:0:1 
+2023-10-26 16:09:57.810 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(101) -  [20231026160957717-fa48a43816b64f70a7cffbe2973d4cf1] - Handle request with requestBody: {"requestId":" hjawfhwqsnmkfu123894y289","requestTime":"20230623155051","commandCode":"FC230623523226","totalRecord":20,"totalFee":1000.0,"createdUser":"admin","createdDate":"20230623155051"} 
+2023-10-26 16:09:57.854 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(76) -  [20231026160957717-fa48a43816b64f70a7cffbe2973d4cf1] - Process request in RequestHandler take 135 millisecond 
+2023-10-26 16:11:02.689 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 16:11:02.696 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 16:11:02.977 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 16:11:03.004 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 16:11:03.088 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 16:11:03.109 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 16:11:03.477 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 16:11:03.498 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 16:11:03.577 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 16:11:03.581 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@239105a8
+2023-10-26 16:11:04.114 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 16:11:04.132 [main] INFO  v.v.d.controller.FeeController(25) -  Server is running on port 8080
+2023-10-26 16:11:04.179 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 16:11:07.867 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(32) -  [20231026161107867-889148cca4b44aad9bb3de7f64eab55f] - Received POST request with endpoint: /init
+2023-10-26 16:11:07.868 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(59) -  [20231026161107867-889148cca4b44aad9bb3de7f64eab55f] - Start handle request POST in RequestHandler
+2023-10-26 16:11:07.869 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(89) -  [20231026161107867-889148cca4b44aad9bb3de7f64eab55f] - Handle request with clientIp 0:0:0:0:0:0:0:1 
+2023-10-26 16:11:07.966 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(101) -  [20231026161107867-889148cca4b44aad9bb3de7f64eab55f] - Handle request with requestBody: {"requestId":" hjawfhwqsnmkfu123894y289","requestTime":"20230623155051","commandCode":"FC230623523226","totalRecord":20,"totalFee":1000.0,"createdUser":"admin","createdDate":"20230623155051"} 
+2023-10-26 16:11:08.011 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(76) -  [20231026161107867-889148cca4b44aad9bb3de7f64eab55f] - Process request in RequestHandler take 143 millisecond 
+2023-10-26 16:11:42.458 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 16:11:42.464 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 16:11:42.741 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 16:11:42.770 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 16:11:42.858 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 16:11:42.879 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 16:11:43.219 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 16:11:43.242 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 16:11:43.327 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 16:11:43.335 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@239105a8
+2023-10-26 16:11:43.903 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 16:11:43.928 [main] INFO  v.v.d.controller.FeeController(25) -  Server is running on port 8080
+2023-10-26 16:11:43.975 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 16:13:16.755 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(32) -  [20231026161316755-8520fc904b4a4c23b249061c2a1626a3] - Received POST request with endpoint: /init
+2023-10-26 16:13:16.756 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(59) -  [20231026161316755-8520fc904b4a4c23b249061c2a1626a3] - Start handle request POST in RequestHandler
+2023-10-26 16:13:16.757 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(89) -  [20231026161316755-8520fc904b4a4c23b249061c2a1626a3] - Handle request with clientIp 0:0:0:0:0:0:0:1 
+2023-10-26 16:13:16.854 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(101) -  [20231026161316755-8520fc904b4a4c23b249061c2a1626a3] - Handle request with requestBody: {"requestId":" hjawfhwqsnmkfu123894y289","requestTime":"20230623155051","commandCode":"FC230623523226","totalRecord":20,"totalFee":1000.0,"createdUser":"admin","createdDate":"20230623155051"} 
+2023-10-26 16:13:16.900 [pool-2-thread-2] INFO  v.v.d.handle.RequestHandler(76) -  [20231026161316755-8520fc904b4a4c23b249061c2a1626a3] - Process request in RequestHandler take 144 millisecond 
+2023-10-26 16:45:09.094 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 16:45:09.099 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 16:45:09.402 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 16:45:09.433 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 16:45:09.530 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 16:45:09.551 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 16:45:09.917 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 16:45:09.934 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 16:45:10.021 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 16:45:10.025 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6f1c29b7
+2023-10-26 16:45:10.628 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 16:45:10.706 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 16:45:33.881 [main] ERROR vn.vnpay.fee.Main(28) -  Failed to initialize
+org.hibernate.QueryException: Named parameter [commandCode] not set
+	at org.hibernate.query.internal.QueryParameterBindingsImpl.verifyParametersBound(QueryParameterBindingsImpl.java:251)
+	at org.hibernate.query.internal.AbstractProducedQuery.beforeQuery(AbstractProducedQuery.java:1313)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1412)
+	at vn.vnpay.fee.service.impl.TransactionServiceImpl.fetchFeeTransactionsByPage(TransactionServiceImpl.java:158)
+	at vn.vnpay.fee.service.impl.TransactionServiceImpl.fetchAllFeeTransactions(TransactionServiceImpl.java:82)
+	at vn.vnpay.fee.Main.main(Main.java:26)
+2023-10-26 16:47:42.388 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 16:47:42.393 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 16:47:42.662 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 16:47:42.694 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 16:47:42.790 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 16:47:42.811 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 16:47:43.185 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 16:47:43.201 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 16:47:43.288 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 16:47:43.295 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6f1c29b7
+2023-10-26 16:47:43.902 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 16:47:43.978 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 16:50:27.972 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 16:50:27.977 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 16:50:28.252 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 16:50:28.284 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 16:50:28.381 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 16:50:28.403 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 16:50:28.787 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 16:50:28.803 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 16:50:28.889 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 16:50:28.893 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6f1c29b7
+2023-10-26 16:50:29.496 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 16:50:29.574 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 16:51:21.609 [HikariPool-1 housekeeper] WARN  c.z.hikari.pool.HikariPool(687) -  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s720ms473µs100ns).
+2023-10-26 16:54:15.146 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 16:54:15.151 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 16:54:15.404 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 16:54:15.431 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 16:54:15.515 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 16:54:15.535 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 16:54:15.886 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 16:54:15.907 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 16:54:15.995 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 16:54:16.001 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@239105a8
+2023-10-26 16:54:16.529 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 16:54:16.595 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 16:56:58.845 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 16:56:58.849 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 16:56:59.102 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 16:56:59.130 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 16:56:59.211 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 16:56:59.231 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 16:56:59.572 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 16:56:59.593 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 16:56:59.670 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 16:56:59.675 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@239105a8
+2023-10-26 16:57:00.181 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 16:57:00.244 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 16:59:49.359 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 16:59:49.363 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 16:59:49.645 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 16:59:49.677 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 16:59:49.773 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 16:59:49.794 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 16:59:50.169 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 16:59:50.186 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 16:59:50.277 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 16:59:50.283 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6f1c29b7
+2023-10-26 16:59:50.891 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 16:59:50.969 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 17:01:14.188 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 17:01:14.192 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 17:01:14.468 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 17:01:14.500 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 17:01:14.603 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 17:01:14.636 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 17:01:15.011 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 17:01:15.027 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 17:01:15.108 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 17:01:15.116 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6f1c29b7
+2023-10-26 17:01:15.726 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 17:01:15.805 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 17:03:01.584 [HikariPool-1 housekeeper] WARN  c.z.hikari.pool.HikariPool(687) -  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m46s461ms745µs900ns).
+2023-10-26 17:04:02.027 [HikariPool-1 housekeeper] WARN  c.z.hikari.pool.HikariPool(687) -  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m442ms758µs500ns).
+2023-10-26 17:08:45.189 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 17:08:45.195 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 17:08:45.452 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 17:08:45.482 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 17:08:45.564 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 17:08:45.585 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 17:08:45.935 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 17:08:45.958 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 17:08:46.044 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 17:08:46.049 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@239105a8
+2023-10-26 17:08:46.567 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 17:08:46.632 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 17:13:38.602 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 17:13:38.608 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 17:13:38.885 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 17:13:38.919 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 17:13:39.020 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 17:13:39.040 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 17:13:39.414 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 17:13:39.432 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 17:13:39.523 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 17:13:39.530 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6f1c29b7
+2023-10-26 17:13:40.142 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 17:13:40.225 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 17:22:30.688 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 17:22:30.694 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 17:22:30.964 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 17:22:30.996 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 17:22:31.095 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 17:22:31.117 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 17:22:31.480 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 17:22:31.497 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 17:22:31.584 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 17:22:31.591 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6f1c29b7
+2023-10-26 17:22:32.233 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 17:22:40.160 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 17:26:44.661 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 17:26:44.665 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 17:26:44.921 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 17:26:44.949 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 17:26:45.032 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 17:26:45.053 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 17:26:45.392 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 17:26:45.413 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 17:26:45.489 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 17:26:45.494 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@239105a8
+2023-10-26 17:26:46.011 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 17:26:46.082 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory
+2023-10-26 17:27:42.951 [main] INFO  org.hibernate.Version(45) -  HHH000412: Hibernate Core {5.2.10.Final}
+2023-10-26 17:27:42.956 [main] INFO  org.hibernate.cfg.Environment(213) -  HHH000206: hibernate.properties not found
+2023-10-26 17:27:43.234 [main] INFO  v.v.d.c.d.DataSourceConfig(50) -  Hibernate Registry builder created.
+2023-10-26 17:27:43.266 [main] INFO  o.h.annotations.common.Version(66) -  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2023-10-26 17:27:43.362 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator(122) -  HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+2023-10-26 17:27:43.384 [main] INFO  c.z.hikari.HikariDataSource(71) -  HikariPool-1 - Starting...
+2023-10-26 17:27:43.746 [main] INFO  c.z.hikari.HikariDataSource(73) -  HikariPool-1 - Start completed.
+2023-10-26 17:27:43.763 [main] INFO  org.hibernate.dialect.Dialect(157) -  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2023-10-26 17:27:43.854 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl(124) -  HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-10-26 17:27:43.860 [main] INFO  o.h.type.BasicTypeRegistry(148) -  HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6f1c29b7
+2023-10-26 17:27:44.457 [main] INFO  v.v.d.config.redis.RedisConfig(57) -  Create redis pool configuration with 3 connections
+2023-10-26 17:27:53.306 [pool-1-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator(47) -  HHH000397: Using ASTQueryTranslatorFactory

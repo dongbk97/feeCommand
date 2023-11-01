@@ -64,9 +64,9 @@ public class RequestHandler implements HttpHandler {
             this.logClientIP(httpExchange);
             FeeCommandRequest feeCommandRequest = this.getPaymentRequestBody(httpExchange);
             boolean isExpired = this.checkIfExpiredRequest(feeCommandRequest, httpExchange);
-//            boolean isExistRequestId = this.checkIfExistsRequestId(feeCommandRequest.getRequestId(), httpExchange);
+            boolean isExistRequestId = this.checkIfExistsRequestId(feeCommandRequest.getRequestId(), httpExchange, isExpired);
 
-            if (!isExpired ) {
+            if (!isExpired && !isExistRequestId) {
                 logger.info("[{}] - Start process fee command ", logId);
                 this.processInitFee(httpExchange, feeCommandRequest);
             }
@@ -97,7 +97,7 @@ public class RequestHandler implements HttpHandler {
         byte[] bytes = CommonUtil.getBytesFromInputStream(is);
         FeeCommandRequest feeCommandRequest = CommonUtil.bytesToObject(bytes, FeeCommandRequest.class);
         String responseLog = CommonUtil.objectToJson(feeCommandRequest);
-        logger.info("[{}] - Handle request with requestBody: {} ", logId, responseLog);
+        logger.info("[{}] - Handle {} request with requestBody: {} ", logId, httpExchange.getRequestMethod(), responseLog);
         return feeCommandRequest;
     }
 

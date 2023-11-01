@@ -30,6 +30,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
+import static vn.vnpay.fee.handle.RequestHandler.logIdThreadLocal;
+
 public class CommonUtil {
     private static final ObjectMapper objectMapper = new ObjectMapper();
     static Logger logger = LoggerFactory.getLogger(CommonUtil.class);
@@ -107,22 +109,22 @@ public class CommonUtil {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
         LocalDateTime parsedTime = LocalDateTime.parse(requestTime, formatter);
         LocalDateTime currentTime = LocalDateTime.now();
-
         long minutesDiff = java.time.Duration.between(parsedTime, currentTime).toMinutes();
         return Math.abs(minutesDiff) > 10;
     }
 
     public static boolean isExistKey(String requestId) {
+        String logId = logIdThreadLocal.get();
         RedisConfig redisConfig = RedisConfig.getInstance();
         Jedis jedis = null;
         try {
             jedis = redisConfig.getJedisPool().getResource();
             return jedis.exists(requestId);
         } catch (JedisConnectionException e) {
-            logger.error(" Error connecting to Redis", e);
+            logger.error("[{}] - Error connecting to Redis", logId, e);
             return false;
         } catch (Exception e) {
-            logger.error("Error push message to redis", e);
+            logger.error("[{}] - An occur error when check exist requestId on redis", logId, e);
             return false;
         } finally {
             if (jedis != null) {
@@ -132,34 +134,39 @@ public class CommonUtil {
     }
 
     public static boolean pushRedis(String requestId) {
+        String logId = logIdThreadLocal.get();
         RedisConfig redisConfig = RedisConfig.getInstance();
         Jedis jedis = null;
         try {
             jedis = redisConfig.getJedisPool().getResource();
             String resultPushMessage = "";
             if (jedis != null) {
-                LocalDateTime now = LocalDateTime.now();
-                LocalDateTime endOfDay = LocalDateTime.of(now.getYear(), now.getMonth(), now.getDayOfMonth(), 23, 59, 59);
-                long timeToLife = endOfDay.toEpochSecond(ZoneOffset.UTC) - now.toEpochSecond(ZoneOffset.UTC);
+                long timeToLife = processTimeToLife();
                 resultPushMessage = jedis.setex(requestId, timeToLife, "");
             }
             boolean isPushMessageSuccessfully = "OK".equalsIgnoreCase(resultPushMessage);
             if (isPushMessageSuccessfully) {
-                logger.info(" Push requestId : {} to Redis successfully !",
+                logger.info("[{}] - Push message with requestId : {} to Redis successfully !", logId,
                         requestId);
             }
             return isPushMessageSuccessfully;
         } catch (JedisConnectionException e) {
-            logger.error(" Error connecting to Redis", e);
+            logger.error("[{}] - Error connecting to Redis", logId, e);
             return false;
         } catch (Exception e) {
-            logger.error("Error push message to redis", e);
+            logger.error("[{}] - Error push message to redis", logId, e);
             return false;
         } finally {
             if (jedis != null) {
                 redisConfig.returnConnection(jedis);
             }
         }
+    }
+
+    private static long processTimeToLife() {
+        LocalDateTime now = LocalDateTime.now();
+        LocalDateTime endOfDay = LocalDateTime.of(now.getYear(), now.getMonth(), now.getDayOfMonth(), 23, 59, 59);
+        return endOfDay.toEpochSecond(ZoneOffset.UTC) - now.toEpochSecond(ZoneOffset.UTC);
     }
 
     public static String getNextId() {

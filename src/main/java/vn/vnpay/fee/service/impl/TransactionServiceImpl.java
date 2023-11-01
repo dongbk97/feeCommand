@@ -22,7 +22,7 @@ import static vn.vnpay.fee.handle.RequestHandler.logIdThreadLocal;
 
 public class TransactionServiceImpl implements TransactionService {
     private final Logger logger = LoggerFactory.getLogger(TransactionServiceImpl.class);
-
+    public static ThreadLocal<String> logIdForScanFee = new ThreadLocal<>();
     public void initFee(FeeCommand feeCommand) {
         String logId = logIdThreadLocal.get();
         DataSourceConfig connectionPool = DataSourceConfig.getInstance();
@@ -76,16 +76,19 @@ public class TransactionServiceImpl implements TransactionService {
         List<FeeTransaction> feeTransactions;
         DataSourceConfig connectionPool = DataSourceConfig.getInstance();
         SessionFactory sessionFactory = connectionPool.getSessionFactory();
+        logger.info("[{}] -Getting sessionFactory from pool successfully", logId);
         Transaction transaction = null;
         boolean hasRecords = false;
         try (Session session = sessionFactory.openSession()) {
             do {
                 feeTransactions = this.getListFeeTransactionForUpdate(session, commandCode);
-                hasRecords = feeTransactions != null && !feeTransactions.isEmpty();
+                hasRecords = !feeTransactions.isEmpty();
                 if (hasRecords) {
                     transaction = session.beginTransaction();
                     logger.info("[{}] - Begin transaction to update fee transaction ", logId);
-                    this.updateFeeTransaction(session, transaction, feeTransactions);
+                    this.updateFeeTransaction(session, feeTransactions);
+                    transaction.commit();
+                    logger.info("[{}] - Commit transaction to update fee transaction successfully", logId);
                 }
             } while (hasRecords);
             logger.info("[{}] - Update fee transaction with commandCode: {} successfully", logId, commandCode);
@@ -100,50 +103,51 @@ public class TransactionServiceImpl implements TransactionService {
 
     private List<FeeTransaction> getListFeeTransactionForUpdate(Session session, String commandCode) {
         String logId = logIdThreadLocal.get();
+        logger.info("[{}] - Start getting list fee transaction for update with commandCode: {} ", logId,
+                commandCode);
         String hql = "FROM FeeTransaction ft WHERE ft.status = :status and ft.totalScan = 0 and ft.commandCode = :commandCode ";
         Query query = session.createQuery(hql);
         query.setParameter("status", FeeStatus.CREATE);
         query.setParameter("commandCode", commandCode);
         query.setFirstResult(0);
-        query.setMaxResults(20);
+        query.setMaxResults(500);
         List<FeeTransaction> feeTransactionList = query.list();
-        logger.info("[{}] - Getting list fee transaction with commandCode: {} successfully with size: {}", logId,
+        logger.info("[{}] - Getting list fee transaction for update with commandCode: {} successfully with size: {}", logId,
                 commandCode, feeTransactionList.size());
         return feeTransactionList;
     }
 
-    private void updateFeeTransaction(Session session, Transaction transaction, List<FeeTransaction> feeTransactionList) {
+    private void updateFeeTransaction(Session session, List<FeeTransaction> feeTransactionList) {
         String logId = logIdThreadLocal.get();
+        logger.info("[{}] - Start update list fee transaction ", logId);
         feeTransactionList.forEach(feeTransaction -> {
             feeTransaction.setTotalScan(1);
             feeTransaction.setModifiedDate(LocalDateTime.now());
             feeTransaction.setStatus(FeeStatus.FEE_CHARGING);
             session.save(feeTransaction);
         });
-        transaction.commit();
-        logger.info("[{}] - Commit transaction to update fee transaction successfully", logId);
+        logger.info("[{}] - End of update list fee transaction", logId);
     }
 
     public void scanFee() {
+        String logId = CommonUtil.generateLogIdByNanoTime("");
+        logIdForScanFee.set(logId);
+        logger.info("[{}] - Start scan fee transaction ", logId);
         DataSourceConfig connectionPool = DataSourceConfig.getInstance();
         SessionFactory sessionFactory = connectionPool.getSessionFactory();
         Transaction transaction = null;
         try (Session session = sessionFactory.openSession()) {
-            List<FeeTransaction> feeTransactionList = getListFeeTransactionForScan(session);
-            if (feeTransactionList != null && !feeTransactionList.isEmpty()) {
+            List<FeeTransaction> listFeeTransactionForScan = getListFeeTransactionForScan(session);
+            if (listFeeTransactionForScan != null && !listFeeTransactionForScan.isEmpty()) {
                 transaction = session.beginTransaction();
-                feeTransactionList.forEach(feeTransaction -> {
-                    if (feeTransaction.getTotalScan() == 4) {
-                        feeTransaction.setStatus(FeeStatus.FEE_STOP);
-                    }
-                    feeTransaction.setTotalScan(feeTransaction.getTotalScan() + 1);
-                    feeTransaction.setModifiedDate(LocalDateTime.now());
-                    session.save(feeTransaction);
-                });
+                logger.info("[{}] - Begin transaction to update fee transaction when scan", logId);
+                this.processScanFee(session, listFeeTransactionForScan);
                 transaction.commit();
+                logger.info("[{}] - Commit transaction to update fee transaction when scan successfully", logId);
             }
+            logger.info("[{}] - Scan fee successfully ", logId);
         } catch (Exception ex) {
-            logger.error("Occur error while update fee transaction ", ex);
+            logger.error("[{}] - Occur error while update fee transaction ", logId, ex);
             if (transaction != null && transaction.isActive()) {
                 transaction.rollback();
             }
@@ -151,14 +155,31 @@ public class TransactionServiceImpl implements TransactionService {
     }
 
     public List<FeeTransaction> getListFeeTransactionForScan(Session session) {
+        String logId = logIdForScanFee.get();
+        logger.info("[{}] - Start getting list fee transaction for scan fee ", logId);
         String hql = "FROM FeeTransaction ft WHERE ft.status = :status and ft.totalScan < 5";
         Query query = session.createQuery(hql);
         query.setParameter("status", FeeStatus.FEE_CHARGING);
         query.setFirstResult(0);
         query.setMaxResults(500);
         List<FeeTransaction> feeTransactionList = query.list();
-        logger.info(" Getting list fee transaction for scan fee successfully with size: {}", feeTransactionList.size());
+        logger.info("[{}] - Getting list fee transaction for scan fee successfully with size: {}", logId,
+                feeTransactionList.size());
         return feeTransactionList;
+    }
+
+    private void processScanFee(Session session, List<FeeTransaction> feeTransactionList) {
+        String logId = logIdForScanFee.get();
+        logger.info("[{}] - Start update list fee transaction when scan fee", logId);
+        feeTransactionList.forEach(feeTransaction -> {
+            if (feeTransaction.getTotalScan() == 4) {
+                feeTransaction.setStatus(FeeStatus.FEE_STOP);
+            }
+            feeTransaction.setTotalScan(feeTransaction.getTotalScan() + 1);
+            feeTransaction.setModifiedDate(LocalDateTime.now());
+            session.save(feeTransaction);
+        });
+        logger.info("[{}] - End of update list fee transaction when scan fee", logId);
     }
 
 }

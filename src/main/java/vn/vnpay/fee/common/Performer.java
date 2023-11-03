@@ -1,10 +1,10 @@
 package vn.vnpay.fee.common;
 
-public enum CreateUser {
+public enum Performer {
     ADMIN("admin"), USER("user");
     final String name;
 
-    CreateUser(String name) {
+    Performer(String name) {
         this.name = name;
     }
 }

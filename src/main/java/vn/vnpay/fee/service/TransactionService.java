@@ -5,9 +5,9 @@ import vn.vnpay.fee.service.impl.TransactionServiceImpl;
 
 public interface TransactionService {
 
-    void initFee(FeeCommand feeCommand);
+    boolean initFeeCommand(FeeCommand feeCommand, String logId);
 
-    void updateFee(String commandCode);
+    boolean updateFee(String commandCode, String logId);
 
     void scanFee();
 

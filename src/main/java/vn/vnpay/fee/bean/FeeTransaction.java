@@ -11,6 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 @Entity
 @Table(name = "FEE_TRANSACTION")
@@ -126,5 +127,28 @@ public class FeeTransaction {
 
     public void setModifiedDate(LocalDateTime modifiedDate) {
         this.modifiedDate = modifiedDate;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        FeeTransaction that = (FeeTransaction) object;
+        return id == that.id &&
+                Double.compare(feeAmount, that.feeAmount) == 0 &&
+                totalScan == that.totalScan &&
+                Objects.equals(transactionCode, that.transactionCode) &&
+                Objects.equals(commandCode, that.commandCode) &&
+                status == that.status &&
+                Objects.equals(accountNumber, that.accountNumber) &&
+                Objects.equals(remark, that.remark) &&
+                Objects.equals(modifiedDate, that.modifiedDate);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, transactionCode, commandCode,
+                feeAmount, status, accountNumber, totalScan,
+                remark, modifiedDate);
     }
 }

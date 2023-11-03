@@ -2,17 +2,17 @@ package vn.vnpay.fee.common;
 
 public class Snowflake {
 
-    private static final long START_STMP = 1480166465631L;
+    private static final long START_STMP = 1672531200000L;  // 2023-01-01T00:00:00Z
 
     /**
-     * theNumberOfBitsOccupiedByEachPart
+     * the Number Of Bits Occupied By Each Part
      */
     private static final long SEQUENCE_BIT = 12;
     private static final long MACHINE_BIT = 5;
     private static final long DATACENTER_BIT = 5;
 
     /**
-     * maximumValueOfEachPart
+     * maximum Value Of Each Part
      */
     private static final long MAX_DATACENTER_NUM = ~(-1L << DATACENTER_BIT);
     private static final long MAX_MACHINE_NUM = ~(-1L << MACHINE_BIT);

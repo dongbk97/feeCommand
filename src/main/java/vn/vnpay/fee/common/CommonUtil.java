@@ -3,8 +3,6 @@ package vn.vnpay.fee.common;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -24,8 +22,6 @@ import java.util.Map;
 
 public class CommonUtil {
     private static final ObjectMapper objectMapper = new ObjectMapper();
-    static Logger logger = LoggerFactory.getLogger(CommonUtil.class);
-    private final ThreadLocal<String> logIdThreadLocal = new ThreadLocal<>();
     private CommonUtil() {
     }
 
@@ -76,12 +72,6 @@ public class CommonUtil {
         return queryParams;
     }
 
-
-    public static synchronized String generateLogId() {
-        Snowflake snowflake = SnowflakeSingleton.getInstanceForLogId(3, 5);
-        return Long.toString(snowflake.nextId());
-    }
-
     public static boolean isExpired(String requestTime) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
         LocalDateTime parsedTime = LocalDateTime.parse(requestTime, formatter);
@@ -97,6 +87,10 @@ public class CommonUtil {
         return endOfDay.toEpochSecond(ZoneOffset.UTC) - now.toEpochSecond(ZoneOffset.UTC);
     }
 
+    public static String generateLogId() {
+        Snowflake snowflake = SnowflakeSingleton.getInstanceForLogId(3, 5);
+        return Long.toString(snowflake.nextId());
+    }
     public static String getNextId() {
         Snowflake snowflake = SnowflakeSingleton.getInstanceForDatabaseId(6, 5);
         return Long.toString(snowflake.nextId());

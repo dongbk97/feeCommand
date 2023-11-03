@@ -14,28 +14,21 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
-import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.UUID;
 
 import static vn.vnpay.fee.handle.RequestHandler.logIdThreadLocal;
 
 public class CommonUtil {
     private static final ObjectMapper objectMapper = new ObjectMapper();
     static Logger logger = LoggerFactory.getLogger(CommonUtil.class);
-
     private CommonUtil() {
     }
 
@@ -86,23 +79,10 @@ public class CommonUtil {
         return queryParams;
     }
 
-    public static String generateLogId() {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmssSSS");
-        String timestamp = sdf.format(new Date());
-        String uuid = UUID.randomUUID().toString().replace("-", "");
-        return timestamp + "-" + uuid;
-    }
 
-    public static synchronized String generateLogIdByNanoTime(String ipClient) {
-        long nanoTime = System.nanoTime();
-        List<Character> digits = new ArrayList<>(Arrays.asList('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'));
-        Collections.shuffle(digits);
-        StringBuilder shuffledNumber = new StringBuilder();
-        for (char c : digits) {
-            shuffledNumber.append(c);
-        }
-        shuffledNumber.append(nanoTime).append(ipClient.replace(":", "").replace(".", ""));
-        return shuffledNumber.toString();
+    public static synchronized String generateLogId() {
+        Snowflake snowflake = SnowflakeSingleton.getInstanceForLogId(3, 5);
+        return Long.toString(snowflake.nextId());
     }
 
     public static boolean isExpired(String requestTime) {
@@ -170,7 +150,7 @@ public class CommonUtil {
     }
 
     public static String getNextId() {
-        Snowflake snowflake = SnowflakeSingleton.getInstance();
+        Snowflake snowflake = SnowflakeSingleton.getInstanceForDatabaseId(6, 5);
         return Long.toString(snowflake.nextId());
     }
 }

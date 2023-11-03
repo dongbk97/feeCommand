@@ -12,7 +12,7 @@ import vn.vnpay.fee.bean.FeeTransaction;
 
 public class DataSourceConfig {
 
-    private volatile static DataSourceConfig instance;
+    private static volatile DataSourceConfig instance;
     private final Logger logger = LoggerFactory.getLogger(DataSourceConfig.class);
     private StandardServiceRegistry registry;
     private SessionFactory sessionFactory;

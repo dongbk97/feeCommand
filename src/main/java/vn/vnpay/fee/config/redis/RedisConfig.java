@@ -9,7 +9,7 @@ import vn.vnpay.fee.annotation.CustomValue;
 import vn.vnpay.fee.annotation.ValueInjector;
 
 public class RedisConfig {
-    private volatile static RedisConfig instance;
+    private static volatile RedisConfig instance;
     private final Logger logger = LoggerFactory.getLogger(RedisConfig.class);
     private JedisPool jedisPool;
     @CustomValue("redis.host")

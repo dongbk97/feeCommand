@@ -1,20 +1,28 @@
 package vn.vnpay.fee.common;
 
 public class SnowflakeSingleton {
-    private static volatile Snowflake instance;
+    private static volatile Snowflake instanceForLogId;
+    private static volatile Snowflake instanceForDatabaseId;
 
-    private SnowflakeSingleton() {
-        // Khởi tạo Snowflake ở đây
-    }
-
-    public static Snowflake getInstance() {
-        if (instance == null) {
+    public static Snowflake getInstanceForLogId(long type, long nodeId) {
+        if (instanceForLogId == null) {
             synchronized (SnowflakeSingleton.class) {
-                if (instance == null) {
-                    instance = new Snowflake(2, 3);
+                if (instanceForLogId == null) {
+                    instanceForLogId = new Snowflake(type, nodeId);
                 }
             }
         }
-        return instance;
+        return instanceForLogId;
+    }
+
+    public static Snowflake getInstanceForDatabaseId(long type, long nodeId) {
+        if (instanceForDatabaseId == null) {
+            synchronized (SnowflakeSingleton.class) {
+                if (instanceForDatabaseId == null) {
+                    instanceForDatabaseId = new Snowflake(type, nodeId);
+                }
+            }
+        }
+        return instanceForDatabaseId;
     }
 }

@@ -1,13 +1,10 @@
 package vn.vnpay.fee.annotation;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import vn.vnpay.fee.common.PropertiesFactory;
 
 import java.lang.reflect.Field;
 
 public class ValueInjector {
-    private static final Logger logger = LoggerFactory.getLogger(ValueInjector.class);
 
     private ValueInjector() {
     }

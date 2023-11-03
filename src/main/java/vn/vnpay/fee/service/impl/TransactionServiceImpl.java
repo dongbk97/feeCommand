@@ -15,14 +15,27 @@ import vn.vnpay.fee.config.database.DataSourceConfig;
 import vn.vnpay.fee.service.TransactionService;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import static vn.vnpay.fee.handle.RequestHandler.logIdThreadLocal;
 
 public class TransactionServiceImpl implements TransactionService {
+
+    public static final ThreadLocal<String> logIdForScanFee = new ThreadLocal<>();
     private final Logger logger = LoggerFactory.getLogger(TransactionServiceImpl.class);
-    public static ThreadLocal<String> logIdForScanFee = new ThreadLocal<>();
+    private static volatile TransactionService instance;
+
+    public static TransactionService getInstance() {
+        if (instance == null) {
+            synchronized (TransactionServiceImpl.class) {
+                if (instance == null) {
+                    instance = new TransactionServiceImpl();
+                }
+            }
+        }
+        return instance;
+    }
     public void initFee(FeeCommand feeCommand) {
         String logId = logIdThreadLocal.get();
         DataSourceConfig connectionPool = DataSourceConfig.getInstance();
@@ -57,7 +70,7 @@ public class TransactionServiceImpl implements TransactionService {
         String logId = logIdThreadLocal.get();
         int totalRecord = feeCommand.getTotalRecord();
         logger.info("[{}] - Begin create list fee transaction with total record : {}", logId, totalRecord);
-        List<FeeTransaction> feeTransactionList = new ArrayList<>(totalRecord);
+        List<FeeTransaction> feeTransactionList = new LinkedList<>();
         for (int i = 0; i < totalRecord; i++) {
             FeeTransaction feeTransaction = new FeeTransaction();
             feeTransaction.setCommandCode(feeCommand.getCommandCode());
@@ -129,8 +142,9 @@ public class TransactionServiceImpl implements TransactionService {
         logger.info("[{}] - End of update list fee transaction", logId);
     }
 
+
     public void scanFee() {
-        String logId = CommonUtil.generateLogIdByNanoTime("");
+        String logId = CommonUtil.generateLogId();
         logIdForScanFee.set(logId);
         logger.info("[{}] - Start scan fee transaction ", logId);
         DataSourceConfig connectionPool = DataSourceConfig.getInstance();
@@ -181,5 +195,4 @@ public class TransactionServiceImpl implements TransactionService {
         });
         logger.info("[{}] - End of update list fee transaction when scan fee", logId);
     }
-
 }

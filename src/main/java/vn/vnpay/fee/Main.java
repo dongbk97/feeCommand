@@ -7,7 +7,6 @@ import vn.vnpay.fee.config.redis.RedisConfig;
 import vn.vnpay.fee.controller.FeeController;
 import vn.vnpay.fee.job.ScheduleScanTime;
 import vn.vnpay.fee.service.TransactionService;
-import vn.vnpay.fee.service.impl.TransactionServiceImpl;
 
 import java.util.Arrays;
 import java.util.List;
@@ -19,7 +18,7 @@ public class Main {
         try {
             DataSourceConfig.initDatabaseConnectionPool();
             RedisConfig.initRedisConfig();
-            TransactionService transactionService = new TransactionServiceImpl();
+            TransactionService transactionService = TransactionService.getInstance();
             ScheduleScanTime scheduleScanTime = new ScheduleScanTime();
             scheduleScanTime.cronJob(transactionService);
             FeeController feeController = new FeeController();

@@ -10,7 +10,6 @@ import vn.vnpay.fee.common.GeneralResponse;
 import vn.vnpay.fee.common.HttpStatus;
 import vn.vnpay.fee.common.RequestMethod;
 import vn.vnpay.fee.service.TransactionService;
-import vn.vnpay.fee.service.impl.TransactionServiceImpl;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,15 +19,14 @@ import java.util.Map;
 
 
 public class RequestHandler implements HttpHandler {
-    public static ThreadLocal<String> logIdThreadLocal = new ThreadLocal<>();
+    public static final ThreadLocal<String> logIdThreadLocal = new ThreadLocal<>();
     private final Logger logger = LoggerFactory.getLogger(RequestHandler.class);
 
 
     @Override
     public void handle(HttpExchange exchange) {
         String requestMethod = exchange.getRequestMethod();
-        String clientIP = exchange.getRemoteAddress().getAddress().getHostAddress();
-        String logId = CommonUtil.generateLogIdByNanoTime(clientIP);
+        String logId = CommonUtil.generateLogId();
         logIdThreadLocal.set(logId);
         logger.info("[{}] - Received {} request with endpoint: {}", logId, requestMethod, exchange.getRequestURI());
         try {
@@ -41,7 +39,7 @@ public class RequestHandler implements HttpHandler {
             } else if (requestMethod.equalsIgnoreCase(RequestMethod.DELETE.name())) {
                 this.handleDelete(exchange);
             } else {
-                sendResponse(exchange, "Method not supported", 405,
+                sendResponse(exchange, "Method not supported", null, 405,
                         HttpStatus.INTERNAL_SERVER_ERROR.getMessageStatus());
             }
         } catch (IOException e) {
@@ -52,7 +50,7 @@ public class RequestHandler implements HttpHandler {
     private void handleGet(HttpExchange httpExchange) throws IOException {
         Map<String, List<String>> params = CommonUtil.splitQuery(httpExchange.getRequestURI().getRawQuery());
         String response = "GET request received. Params: " + params;
-        this.sendResponse(httpExchange, response, HttpStatus.SUCCESS.getCode(),
+        this.sendResponse(httpExchange, response, null, HttpStatus.SUCCESS.getCode(),
                 HttpStatus.SUCCESS.getMessageStatus());
     }
 
@@ -74,7 +72,7 @@ public class RequestHandler implements HttpHandler {
             logger.info("[{}] - Process request in RequestHandler take {} millisecond ", logId, (end - start));
         } catch (Exception e) {
             logger.error("[{}] - Error processing payment request", logId, e);
-            this.sendResponse(httpExchange, HttpStatus.INTERNAL_SERVER_ERROR.getMessage(),
+            this.sendResponse(httpExchange, HttpStatus.INTERNAL_SERVER_ERROR.getMessage(), null,
                     HttpStatus.INTERNAL_SERVER_ERROR.getCode(), HttpStatus.INTERNAL_SERVER_ERROR.getMessageStatus());
         } finally {
             httpExchange.close();
@@ -106,7 +104,7 @@ public class RequestHandler implements HttpHandler {
         this.pushKeyToRedis(feeCommandRequest);
         String endpoint = httpExchange.getRequestURI().getPath();
         logger.info("[{}] - Process request with endpoint: {} ", logId, endpoint);
-        TransactionService transactionService = new TransactionServiceImpl();
+        TransactionService transactionService = TransactionService.getInstance();
         this.initFee(transactionService, feeCommandRequest, httpExchange);
     }
 
@@ -126,7 +124,7 @@ public class RequestHandler implements HttpHandler {
         feeCommand.setTotalRecord(feeCommandRequest.getTotalRecord());
         transactionService.initFee(feeCommand);
         logger.info("[{}] - Init transaction successfully", logId);
-        this.sendResponse(httpExchange, HttpStatus.SUCCESS.getMessage(),
+        this.sendResponse(httpExchange, HttpStatus.SUCCESS.getMessage(), feeCommand.getCommandCode(),
                 HttpStatus.SUCCESS.getCode(), HttpStatus.SUCCESS.getMessageStatus());
     }
 
@@ -143,14 +141,14 @@ public class RequestHandler implements HttpHandler {
 
             if (!isExpired && !isExistRequestId) {
                 this.processUpdateFee(httpExchange, feeCommandRequest);
-                this.sendResponse(httpExchange, HttpStatus.SUCCESS.getMessage(),
+                this.sendResponse(httpExchange, HttpStatus.SUCCESS.getMessage(), null,
                         HttpStatus.SUCCESS.getCode(), HttpStatus.SUCCESS.getMessageStatus());
             }
             long end = System.currentTimeMillis();
             logger.info("[{}] - Process PUT request to update fee in RequestHandler take {} millisecond ", logId, (end - start));
         } catch (Exception e) {
             logger.error("[{}] - Error processing update fee", logId, e);
-            this.sendResponse(httpExchange, HttpStatus.INTERNAL_SERVER_ERROR.getMessage(),
+            this.sendResponse(httpExchange, HttpStatus.INTERNAL_SERVER_ERROR.getMessage(), null,
                     HttpStatus.INTERNAL_SERVER_ERROR.getCode(), HttpStatus.INTERNAL_SERVER_ERROR.getMessageStatus());
         } finally {
             httpExchange.close();
@@ -163,22 +161,23 @@ public class RequestHandler implements HttpHandler {
         this.pushKeyToRedis(feeCommandRequest);
         String endpoint = httpExchange.getRequestURI().getPath();
         logger.info("[{}] - Process request update fee with endpoint: {} ", logId, endpoint);
-        TransactionService transactionService = new TransactionServiceImpl();
+        TransactionService transactionService = TransactionService.getInstance();
         transactionService.updateFee(feeCommandRequest.getCommandCode());
     }
     private void handleDelete(HttpExchange httpExchange) {
         String response = "DELETE request received";
-        this.sendResponse(httpExchange, response, HttpStatus.SUCCESS.getCode(), HttpStatus.SUCCESS.getMessageStatus());
+        this.sendResponse(httpExchange, response, null, HttpStatus.SUCCESS.getCode(), HttpStatus.SUCCESS.getMessageStatus());
     }
 
-    private void sendResponse(HttpExchange httpExchange, String response, int statusCode, String statusMessage) {
+    private void sendResponse(HttpExchange httpExchange, String responseMessage, String data, int statusCode, String statusMessage) {
         String logId = logIdThreadLocal.get();
         try {
             logger.info("[{}] - Start send response to client ", logId);
             GeneralResponse<String> generalResponse = new GeneralResponse<>();
             httpExchange.getResponseHeaders().set("Content-Type", "application/json");
             logger.info("[{}] - Send response to client with Content-Type : application/json", logId);
-            generalResponse.setMessage(response);
+            generalResponse.setData(data);
+            generalResponse.setMessage(responseMessage);
             generalResponse.setCode(statusMessage);
             String responseString = CommonUtil.objectToJson(generalResponse);
             httpExchange.sendResponseHeaders(statusCode, responseString.length());
@@ -191,13 +190,14 @@ public class RequestHandler implements HttpHandler {
         }
     }
 
+
     private boolean checkIfExistsRequestId(String requestId, HttpExchange httpExchange, boolean isExpired) {
         String logId = logIdThreadLocal.get();
         boolean isExistsRequestId;
         isExistsRequestId = CommonUtil.isExistKey(requestId);
         if (isExistsRequestId && !isExpired) {
             logger.info("[{}] -Request with requestId: {} is existed", logId, requestId);
-            this.sendResponse(httpExchange, HttpStatus.EXISTED_REQUEST_ID.getMessage(),
+            this.sendResponse(httpExchange, HttpStatus.EXISTED_REQUEST_ID.getMessage(), null,
                     HttpStatus.EXISTED_REQUEST_ID.getCode(), HttpStatus.EXISTED_REQUEST_ID.getMessageStatus());
         }
         return isExistsRequestId;
@@ -209,11 +209,10 @@ public class RequestHandler implements HttpHandler {
         isExpired = CommonUtil.isExpired(feeCommandRequest.getRequestTime());
         if (isExpired) {
             logger.info("[{}] - Request with requestId: {} is expired", logId, feeCommandRequest.getRequestId());
-            this.sendResponse(httpExchange, HttpStatus.EXPIRED_REQUEST.getMessage(),
+            this.sendResponse(httpExchange, HttpStatus.EXPIRED_REQUEST.getMessage(), null,
                     HttpStatus.EXPIRED_REQUEST.getCode(), HttpStatus.EXPIRED_REQUEST.getMessageStatus());
         }
         return isExpired;
-
     }
 
 }

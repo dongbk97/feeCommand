@@ -2,28 +2,28 @@ package vn.vnpay.fee.common;
 
 public class Snowflake {
 
-    private final static long START_STMP = 1480166465631L;
+    private static final long START_STMP = 1480166465631L;
 
     /**
      * theNumberOfBitsOccupiedByEachPart
      */
-    private final static long SEQUENCE_BIT = 12;
-    private final static long MACHINE_BIT = 5;
-    private final static long DATACENTER_BIT = 5;
+    private static final long SEQUENCE_BIT = 12;
+    private static final long MACHINE_BIT = 5;
+    private static final long DATACENTER_BIT = 5;
 
     /**
      * maximumValueOfEachPart
      */
-    private final static long MAX_DATACENTER_NUM = -1L ^ (-1L << DATACENTER_BIT);
-    private final static long MAX_MACHINE_NUM = -1L ^ (-1L << MACHINE_BIT);
-    private final static long MAX_SEQUENCE = -1L ^ (-1L << SEQUENCE_BIT);
+    private static final long MAX_DATACENTER_NUM = ~(-1L << DATACENTER_BIT);
+    private static final long MAX_MACHINE_NUM = ~(-1L << MACHINE_BIT);
+    private static final long MAX_SEQUENCE = ~(-1L << SEQUENCE_BIT);
 
     /**
      * the Displacement Of Each Part To The Left
      */
-    private final static long MACHINE_LEFT = SEQUENCE_BIT;
-    private final static long DATACENTER_LEFT = SEQUENCE_BIT + MACHINE_BIT;
-    private final static long TIMESTMP_LEFT = DATACENTER_LEFT + DATACENTER_BIT;
+    private static final long MACHINE_LEFT = SEQUENCE_BIT;
+    private static final long DATACENTER_LEFT = SEQUENCE_BIT + MACHINE_BIT;
+    private static final long TIMESTMP_LEFT = DATACENTER_LEFT + DATACENTER_BIT;
 
     private final long datacenterId;
     private final long machineId;

@@ -11,6 +11,6 @@ public class ScheduleScanTime {
     public void cronJob(TransactionService transactionService) {
         ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
         Runnable task = transactionService::scanFee;
-        scheduler.scheduleAtFixedRate(task, 0, 180, TimeUnit.SECONDS);
+        scheduler.scheduleAtFixedRate(task, 180, 180, TimeUnit.SECONDS);
     }
 }
